@@ -521,12 +521,12 @@ endif;
 
 
 // Press
-    	add_action('init', 'press');    
+    	add_action('init', 'newsroom');    
    	 
-	function press() {    
+	function newsroom() {    
     	$args = array(    
-        	'label' => __('Press'),    
-        	'singular_label' => __('Press'),    
+        	'label' => __('Newsroom'),    
+        	'singular_label' => __('Newsroom'),    
         	'public' => true,    
         	'show_ui' => true,
         	'has_archive' => true,	 
@@ -536,35 +536,14 @@ endif;
         	'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )    
        	);    
    	 
-    	register_post_type( 'press' , $args );    
+    	register_post_type( 'newsroom' , $args );    
 	}    
    
+   register_taxonomy("newsroom-category", array("newsroom"), array("hierarchical" => true, "label" => "Newsroom Category", "singular_label" => "Newsroom Type", "rewrite" => true));
 	
 	
 	
-	// latest_news
-    	add_action('init', 'latest_news');    
-   	 
-	function latest_news() {    
-    	$args = array(    
-        	'label' => __('Latest News'),    
-        	'singular_label' => __('Latest News'),    
-        	'public' => true,    
-        	'show_ui' => true,
-        	'has_archive' => true,	 
-        	'capability_type' => 'post',    
-        	'hierarchical' => false,    
-        	'rewrite' => true,    
-        	'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )    
-       	);    
-   	 
-    	register_post_type( 'latest_news' , $args );    
-	}    
-	register_taxonomy("latest-news-category", array("latest_news"), array("hierarchical" => true, "label" => "Latest News Categories", "singular_label" => "Latest News Category", "rewrite" => true));   
-
-
-
-
+	
 
 
 

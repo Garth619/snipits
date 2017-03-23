@@ -69,6 +69,12 @@
 		"oAP": "\/readme.html",
 		"oF": 0
 		},
+	"\/snip-migrate-20170323055905.sql.gz": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/snip-migrate-20170323055905.sql.gz",
+		"oF": 0
+		},
 	"\/test.html": {
 		"ft": 8192,
 		"oA": 0,
