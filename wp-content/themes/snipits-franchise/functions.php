@@ -516,3 +516,58 @@ function twentyten_posted_in() {
 	);
 }
 endif;
+
+
+
+
+// Press
+    	add_action('init', 'press');    
+   	 
+	function press() {    
+    	$args = array(    
+        	'label' => __('Press'),    
+        	'singular_label' => __('Press'),    
+        	'public' => true,    
+        	'show_ui' => true,
+        	'has_archive' => true,	 
+        	'capability_type' => 'post',    
+        	'hierarchical' => false,    
+        	'rewrite' => true,    
+        	'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )    
+       	);    
+   	 
+    	register_post_type( 'press' , $args );    
+	}    
+   
+	
+	
+	
+	// latest_news
+    	add_action('init', 'latest_news');    
+   	 
+	function latest_news() {    
+    	$args = array(    
+        	'label' => __('Latest News'),    
+        	'singular_label' => __('Latest News'),    
+        	'public' => true,    
+        	'show_ui' => true,
+        	'has_archive' => true,	 
+        	'capability_type' => 'post',    
+        	'hierarchical' => false,    
+        	'rewrite' => true,    
+        	'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )    
+       	);    
+   	 
+    	register_post_type( 'latest_news' , $args );    
+	}    
+	register_taxonomy("latest-news-category", array("latest_news"), array("hierarchical" => true, "label" => "Latest News Categories", "singular_label" => "Latest News Category", "rewrite" => true));   
+
+
+
+
+
+
+
+
+
+

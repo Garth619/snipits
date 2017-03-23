@@ -62,6 +62,26 @@ get_header(); ?>
 							<a href="">Snip-its Logo</a></p>
 						
 						</div><!-- intro -->
+						
+						<div class="newsroom_feed">
+							
+							
+									<?php $mymain_query = new WP_Query( array( 'post_type' => array ( 'latest_news', 'press'),'posts_per_page' => '99', 'order' => 'DSC' ) ); while($mymain_query->have_posts()) : $mymain_query->the_post(); ?>
+                	
+                	<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                    	
+                    	<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                    	
+                    	
+                	
+                	</div>
+                	
+                	<?php endwhile; ?>
+                	<?php wp_reset_postdata(); // reset the query ?>
+
+							
+							
+						</div><!-- newsroom_feed -->
 					
 
 					</div><!-- #content -->
