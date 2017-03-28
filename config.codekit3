@@ -6442,6 +6442,12 @@
 		"oAP": "\/wp-content\/plugins\/better-wp-security\/core\/lib\/validator.php",
 		"oF": 0
 		},
+	"\/wp-content\/plugins\/better-wp-security\/core\/lock.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/better-wp-security\/core\/lock.php",
+		"oF": 0
+		},
 	"\/wp-content\/plugins\/better-wp-security\/core\/modules\/404-detection\/active.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -20032,6 +20038,12 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/wp-content\/uploads\/2017\/03\/FranWise-Revamp-Proposal.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/uploads\/2017\/03\/FranWise-Revamp-Proposal.pdf",
+		"oF": 0
+		},
 	"\/wp-content\/uploads\/gravity_forms\/.htaccess": {
 		"ft": 8192,
 		"oA": 2,
@@ -20462,6 +20474,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-content\/uploads\/ithemes-security\/backups\/backup-snip-its-franchise-o-20170313-082125-EKC1dGirITLCPOHZs89ufa071VrvqE.zip",
+		"oF": 0
+		},
+	"\/wp-content\/uploads\/ithemes-security\/backups\/backup-snip-its-franchise-o-20170323-172234-kpovjO6Ii3xe1OXzTlmEh08usUA9cs.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/uploads\/ithemes-security\/backups\/backup-snip-its-franchise-o-20170323-172234-kpovjO6Ii3xe1OXzTlmEh08usUA9cs.zip",
 		"oF": 0
 		},
 	"\/wp-content\/uploads\/ithemes-security\/backups\/index.php": {

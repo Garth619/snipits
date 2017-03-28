@@ -43,42 +43,87 @@ get_header(); ?>
 						
 						<div class="newsroom_intro">
 						
-							<h2>Newsroom</h2>
-			
-							<p>Welcome to the Snip-its Newsroom — a space for news media and bloggers to find the latest news releases, company information, images and other related content. If you have a special request, would like to obtain our b-roll footage or have general inquiries, please complete the form below.</p>
+							<?php get_template_part( 'loop', 'page' ); ?>
 						
-							<h2>Bios & Company Information</h2>
-
-							<p>Download <a href="">bio sheet</a> for Snip-its Founder, Joanna Meiseles<br/>
-							Download <a href="">bio sheet</a> for Snip-its President & CEO, Jim George<br/>
-							Download <a href="">company backgrounder</a> to learn more about The Snip-its Corporation</p>
-
-							<h2>Images</h2>
-
-							<p>These images for media use only and not for personal use. ©2016 The Snip-its Corporation. All Rights Reserved.</p>
-
-							<p><a href="">Original Snip-its Salon Photo</a><br/>
-							<a href="">Snip-its Professional Hair Care Line-up</a><br/>
-							<a href="">Snip-its Logo</a></p>
-						
-						</div><!-- intro -->
+						</div><!-- newsroom_intro -->
 						
 						<div class="newsroom_feed">
 							
 							
-									<?php $mymain_query = new WP_Query( array( 'post_type' => array ( 'latest_news', 'press'),'posts_per_page' => '99', 'order' => 'DSC' ) ); while($mymain_query->have_posts()) : $mymain_query->the_post(); ?>
-                	
-                	<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-                    	
-                    	<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                    	
-                    	
-                	
-                	</div>
-                	
-                	<?php endwhile; ?>
-                	<?php wp_reset_postdata(); // reset the query ?>
+									<?php if(get_field('newsroom_relation')): ?>
+									 
+										<?php while(has_sub_field('newsroom_relation')): ?>
+									 
+											<div class="year_list">
+											
+											<h2><?php the_sub_field('year');?></h2>
+												
+												
+												<?php $posts = get_sub_field('year_posts');
+												
+												if( $posts ): ?>
+												
+											
+												    
+												    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+												    <?php setup_postdata($post); ?>
+												    
+												    
+												    
+															<?php if( get_field('pdf_or_outside_link') == 'PDF' ): ?>
+												    		
+												    	
+												    		<a class="newsfeed_link" href="<?php the_field('pdf');?>" target="_blank"><?php the_title(); ?></a>
+												    	
+												    	
+												    	<?php endif; ?>
+												    	
+												    	
+												    	<?php if( get_field('pdf_or_outside_link') == 'Outside Link' ): ?>
+												    		
+												    	
+												    		<a class="newsfeed_link" href="<?php the_field('outside_link');?>" target="_blank"><?php the_title(); ?></a>
+												    	
+												    	
+												    	<?php endif; ?>
+												    	
+												    	<?php if( get_field('press_or_blog_post') == 'Blog Post' ): ?>
+												    	
+												    		
+												    		<a class="newsfeed_link" href="<?php the_permalink();?>"><?php the_title(); ?></a>
+												    			
+												    			
+												    			<?php if(get_field('blog_excerpt')):?>
+												    			
+												    			<div class="newsfeed_blog_excerpt">
+												    		
+																		<?php the_field('blog_excerpt');?>...
+																		
+																		<a href="<?php the_permalink();?>">Read More</a>
+												    		
+												    			</div><!-- newsfeed_blog_excerpt -->
+												    			
+												    			<?php endif;?>
+												    	
+												    	
+												    	<?php endif; ?>
+												    
+															
+														<?php endforeach; ?>
+												  
+												  
+												    
+												<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+												<?php endif; ?>
+												
+												</div><!-- year_list -->
 
+									    
+										<?php endwhile; ?>
+										
+										
+									 
+									<?php endif; ?>
 							
 							
 						</div><!-- newsroom_feed -->

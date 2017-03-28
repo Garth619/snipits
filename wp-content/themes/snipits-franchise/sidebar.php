@@ -24,17 +24,32 @@
 			</div>
 		</div><!-- #primary .widget-area -->
 
+
+
 <?php
-	// A second sidebar for widgets, just because.
-	if ( is_active_sidebar( 'secondary-widget-area' ) ) : ?>
 
-		<div id="secondary" class="widget-area" role="complementary">
-			<ul class="xoxo">
-				<?php dynamic_sidebar( 'secondary-widget-area' ); ?>
-			</ul>
-		</div><!-- #secondary .widget-area -->
+$taxonomy = 'newsroom-category';
+$terms = get_terms($taxonomy); // Get all terms of a taxonomy
 
-<?php endif; ?>
+if ( $terms && !is_wp_error( $terms ) ) :
+?>
+    <ul>
+        <?php foreach ( $terms as $term ) { ?>
+            <li><a href="<?php echo get_term_link($term->slug, $taxonomy); ?>"><?php echo $term->name; ?></a></li>
+        <?php } ?>
+    </ul>
+<?php endif;?>
+
+
+			
+
+
+
+
+
+
+
+
 <div class="fran-logos">
 	<img style="margin:0 0 15px 62px;" src="<?php bloginfo( 'template_directory' ); ?>/images/bond.jpg"/>
 	<img src="<?php bloginfo( 'template_directory' ); ?>/images/fran500.jpg"/>
