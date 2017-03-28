@@ -31,9 +31,32 @@
 
 					<div class="entry-content">
 						
+							<?php if( get_field('pdf_or_outside_link') == 'PDF' ): ?>
+												    		
+												    	
+												    		<a class="newsfeed_link" href="<?php the_field('pdf');?>" target="_blank"><?php the_title(); ?></a>
+												    	
+												    	
+												    	<?php endif; ?>
+												    	
+												    	
+												    	<?php if( get_field('pdf_or_outside_link') == 'Outside Link' ): ?>
+												    		
+												    	
+												    		<a class="newsfeed_link" href="<?php the_field('outside_link');?>" target="_blank"><?php the_title(); ?></a>
+												    	
+												    	
+												    	<?php endif; ?>
+												    	
+												    	<?php if( get_field('press_or_blog_post') == 'Blog Post' ): ?>
+												    	
+												    		<?php the_field('blog_text');?>
+												    														    	
+												    	
+												    	<?php endif; ?>
 						
 						
-						<?php the_field('blog_text');?>
+						
 						
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
 					
@@ -44,22 +67,7 @@
 
 					<div class="entry-utility">
 						
-<!--
-						<span class="mypostedin">Categories: <?php   // Get terms for post
-							$terms = get_the_terms( $post->ID , 'newsroom-category' );
- // Loop over each item since it's an array
- if ( $terms != null ){
- foreach( $terms as $term ) {
- 
- // Print the name method from $term which is an OBJECT
- 
- print '<a href="' . get_bloginfo('url'). '/newsroom-category/' . $term->slug .  '">' . $term->name . '&nbsp;&nbsp;' ;
- 
- // Get rid of the other data stored in the object, since it's not needed
- unset($term);
-} } ?>
-</span>
--->
+
 												
 						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
 					</div><!-- .entry-utility -->
