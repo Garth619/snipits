@@ -24,6 +24,7 @@
 
 					<div class="entry-meta">
 						
+						<span class="">Posted on <?php $pfx_date = get_the_date(); ?><?php echo $pfx_date ;?> </span>
 						
 						
 					</div><!-- .entry-meta -->
@@ -43,6 +44,7 @@
 
 					<div class="entry-utility">
 						
+<!--
 						<span class="mypostedin">Categories: <?php   // Get terms for post
 							$terms = get_the_terms( $post->ID , 'newsroom-category' );
  // Loop over each item since it's an array
@@ -57,6 +59,7 @@
  unset($term);
 } } ?>
 </span>
+-->
 												
 						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
 					</div><!-- .entry-utility -->
