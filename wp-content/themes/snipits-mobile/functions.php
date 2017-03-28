@@ -615,3 +615,29 @@ function twentyten_get_gallery_images() {
 
 	return $images;
 }
+
+
+
+
+
+// Press
+    	add_action('init', 'newsroom');    
+   	 
+	function newsroom() {    
+    	$args = array(    
+        	'label' => __('Newsroom'),    
+        	'singular_label' => __('Newsroom'),    
+        	'public' => true,    
+        	'show_ui' => true,
+        	'has_archive' => true,	 
+        	'capability_type' => 'post',    
+        	'hierarchical' => false,    
+        	'rewrite' => true,    
+        	'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )    
+       	);    
+   	 
+    	register_post_type( 'newsroom' , $args );    
+	}    
+   
+   register_taxonomy("newsroom-category", array("newsroom"), array("hierarchical" => true, "label" => "Newsroom Category", "singular_label" => "Newsroom Type", "rewrite" => true));
+	

@@ -19503,6 +19503,12 @@
 		"oAP": "\/wp-content\/themes\/snipits-mobile\/page-main.php",
 		"oF": 0
 		},
+	"\/wp-content\/themes\/snipits-mobile\/page-newsroom.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/snipits-mobile\/page-newsroom.php",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/snipits-mobile\/page-threedtour.php": {
 		"ft": 8192,
 		"oA": 0,
@@ -19547,6 +19553,12 @@
 		"oAP": "\/wp-content\/themes\/snipits-mobile\/search.php",
 		"oF": 0
 		},
+	"\/wp-content\/themes\/snipits-mobile\/sidebar-blog.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/snipits-mobile\/sidebar-blog.php",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/snipits-mobile\/sidebar-footer.php": {
 		"ft": 8192,
 		"oA": 0,
@@ -19557,6 +19569,12 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/wp-content\/themes\/snipits-mobile\/sidebar.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/snipits-mobile\/single-newsroom.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/snipits-mobile\/single-newsroom.php",
 		"oF": 0
 		},
 	"\/wp-content\/themes\/snipits-mobile\/single.php": {
@@ -19575,18 +19593,21 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/themes\/snipits-mobile\/style.scss": {
-		"aP": 0,
+	"\/wp-content\/themes\/snipits-mobile\/style.scss.old": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/snipits-mobile\/style.scss.old",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/snipits-mobile\/styles-landingpage-min.css": {
+		"aP": 1,
 		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
+		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/themes\/snipits-mobile\/style.css",
-		"oF": 2,
-		"oS": 0,
-		"uL": 1
+		"oAP": "\/wp-content\/themes\/snipits-mobile\/styles-landingpage-min-min.css",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/wp-content\/themes\/snipits-mobile\/styles-landingpage.css": {
 		"aP": 1,
@@ -19625,6 +19646,12 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/wp-content\/themes\/snipits-mobile\/tag.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/snipits-mobile\/taxonomy-newsroom-category.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/snipits-mobile\/taxonomy-newsroom-category.php",
 		"oF": 0
 		},
 	"\/wp-content\/themes\/snipits-mobile\/test.html": {
@@ -20060,12 +20087,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-content\/uploads\/2017\/03\/crystal.pdf",
-		"oF": 0
-		},
-	"\/wp-content\/uploads\/gravity_forms\/.htaccess": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/wp-content\/uploads\/gravity_forms\/.htaccess",
 		"oF": 0
 		},
 	"\/wp-content\/uploads\/gravity_forms\/1-dbc4b185c950893572e3cc68b94e5b0f\/index.html": {
