@@ -16664,6 +16664,12 @@
 		"oAP": "\/wp-content\/themes\/snipits-franchise\/author.php",
 		"oF": 0
 		},
+	"\/wp-content\/themes\/snipits-franchise\/category-newsroom.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/snipits-franchise\/category-newsroom.php",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/snipits-franchise\/category.php": {
 		"ft": 8192,
 		"oA": 0,
@@ -17962,6 +17968,12 @@
 		"oAP": "\/wp-content\/themes\/snipits-franchise\/search.php",
 		"oF": 0
 		},
+	"\/wp-content\/themes\/snipits-franchise\/sidebar-blog.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/snipits-franchise\/sidebar-blog.php",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/snipits-franchise\/sidebar-footer.php": {
 		"ft": 8192,
 		"oA": 0,
@@ -17972,6 +17984,12 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/wp-content\/themes\/snipits-franchise\/sidebar.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/snipits-franchise\/single-newsroom.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/snipits-franchise\/single-newsroom.php",
 		"oF": 0
 		},
 	"\/wp-content\/themes\/snipits-franchise\/single.php": {

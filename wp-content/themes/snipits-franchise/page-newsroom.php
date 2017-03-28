@@ -100,6 +100,8 @@ get_header(); ?>
 																		<?php the_field('blog_excerpt');?>...
 																		
 																		<a href="<?php the_permalink();?>">Read More</a>
+																		
+																		
 												    		
 												    			</div><!-- newsfeed_blog_excerpt -->
 												    			
@@ -135,5 +137,5 @@ get_header(); ?>
 		
 		</div><!-- container -->
 		
-<?php get_sidebar(); ?>
+<?php get_sidebar('blog'); ?>
 <?php get_footer(); ?>
