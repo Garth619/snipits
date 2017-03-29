@@ -974,7 +974,52 @@ img.aligncenter {
 img.alignleft,
 img.alignright,
 img.aligncenter {
+  margin-bottom: 12px;
+  max-width:100%;
+  height:auto;
+  }
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 660px) {
+	  
+	  
+	  
+	  .alignleft,
+img.alignleft {
+  display: inline;
+  float: none;
+  margin-right: 0px;
+  margin-top: 4px; }
+
+.alignright,
+img.alignright {
+  display: inline;
+  float: none;
+  margin-left: 0px;
+  margin-top: 4px; }
+
+.aligncenter,
+img.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+img.alignleft,
+img.alignright,
+img.aligncenter {
   margin-bottom: 12px; }
+	  
+	  
+	  
+	  
+  } /* Media Query */
+  
 
 .wp-caption {
   background: #f1f1f1;
