@@ -10,19 +10,21 @@
 get_header(); ?>
 
 		
+
 		
+		
+		<img class="banner" src="<?php the_field('inner_banners');?>"/>
+	<div class="banner-header"></div>
 		<div id="container">
-		<div id="banner-top"></div>
-			<div id="banner">
-				<div class="banner-header"></div>
-			</div>
-		<div id="banner-bottom"></div>
-					<div id="banner-top"></div>
-					<div id="content" role="main">
-			<div class="breadcrumbs">
-   
-</div>
-			<h2 class="page-title"><?php
+			<div id="content"><br/>
+								
+				
+		
+						
+						
+							
+							
+										<h2 class="page-title"><?php
 					printf( __( 'Category Archives: %s', 'twentyten' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 				?></h2>
 				
@@ -41,20 +43,18 @@ get_header(); ?>
 				?>
 
 
-
-			</div><!-- #content -->
-			<div id="banner-bottom" style="margin-bottom:5px;"></div>
-		</div>
-
-		
-		
-		
-		
-		
-		
-
 				
-			
+				
+				
+				
+				
+				
+			</div><!-- #content -->
+			 
+			 <?php get_sidebar('blog'); ?>
 
-<?php get_sidebar('blog'); ?>
-<?php get_footer(); ?>
+			<img class="logos" src="<?php bloginfo('template_directory');?>/images/logos.jpg"/>
+			
+		</div><!-- #container -->
+
+	<?php get_footer(); ?>

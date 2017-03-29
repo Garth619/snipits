@@ -20089,6 +20089,12 @@
 		"oAP": "\/wp-content\/uploads\/2017\/03\/crystal.pdf",
 		"oF": 0
 		},
+	"\/wp-content\/uploads\/gravity_forms\/.htaccess": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/uploads\/gravity_forms\/.htaccess",
+		"oF": 0
+		},
 	"\/wp-content\/uploads\/gravity_forms\/1-dbc4b185c950893572e3cc68b94e5b0f\/index.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -27919,7 +27925,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http:\/\/snipts.demo.com",
+	"externalServerAddress": "http:\/\/snipitsdemo.com",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",

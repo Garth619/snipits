@@ -195,7 +195,7 @@
 			<div class="entry-utility">
 								<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
 			</div><!-- .entry-utility -->
-		</div><!-- #post-## -->
+		
 
 		<?php // comments_template( '', true ); ?>
 
