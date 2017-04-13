@@ -641,3 +641,8 @@ function twentyten_get_gallery_images() {
    
    register_taxonomy("newsroom-category", array("newsroom"), array("hierarchical" => true, "label" => "Newsroom Category", "singular_label" => "Newsroom Type", "rewrite" => true));
 	
+	
+	function remove_posts_menu() {
+    remove_menu_page('edit.php');
+}
+add_action('admin_init', 'remove_posts_menu');

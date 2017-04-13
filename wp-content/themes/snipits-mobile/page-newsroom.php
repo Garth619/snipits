@@ -60,6 +60,20 @@ get_header(); ?>
 												    		
 												    	
 												    		<a class="newsfeed_link" href="<?php the_field('pdf');?>" target="_blank"><?php the_title(); ?></a>
+												    		
+												    		<?php if(get_field('pdf_excerpt')):?>
+												    			
+												    			
+												    				<div class="newsfeed_blog_excerpt">
+												    		
+																			<?php the_field('pdf_excerpt');?>...
+																		
+																			<a href="<?php the_field('pdf');?>">View PDF</a>
+																		
+																		</div><!-- newsfeed_blog_excerpt -->
+												    			
+												    			
+												    			<?php endif;?>
 												    	
 												    	
 												    	<?php endif; ?>
