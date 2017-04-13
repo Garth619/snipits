@@ -440,6 +440,12 @@ Warning: This file is not mean to be edited. Please put your custom CSS into you
 .fvp-share-bar .fvp-sharing a.sharing-email {
 	background-position: 0 -84px;	
 }
+.fvp-share-bar .sharing-link{
+    float: left;
+    color: #fff;
+    padding: 6px 10px;
+    font-weight:bold;
+}
 .flowplayer .fvp-share-bar label{float:left;color:#fff;padding: 6px 10px;}
 .flowplayer .fp-embed{display:none}
 /*.flowplayer.is-mouseover.is-ready .fp-embed-code{display:block}*/
@@ -931,7 +937,18 @@ article .entry-content .fvfp_admin_error p { line-height: 18px; }
   width: calc(100% + 48px);
 }
 
-/*CSS writeout performed on FV Flowplayer Settings save  on Thu, 23 Mar 2017 04:19:40 +0000*/
+
+.is-audio .fp-player {
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
+.fvfp-notice { position: absolute; top: 10%; z-index: 20; text-align: center; width: 100%; color: #fff; text-shadow: 0 0 1px #000;}
+
+
+/*CSS writeout performed on FV Flowplayer Settings save  on Thu, 13 Apr 2017 02:35:55 +0000*/
   
     .flowplayer { margin: 0 auto 28px auto; display: block; }
     .flowplayer.fixed-controls { margin: 0 auto 58px auto; display: block; }
