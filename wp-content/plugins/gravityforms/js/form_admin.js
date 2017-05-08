@@ -1,26 +1,57 @@
-
 /**
 * Common JS functions for form settings and form editor pages.
 */
 
 jQuery(document).ready(function($){
 
-    if($(document).on){
-        $(document).on('change', '.gfield_rule_value_dropdown', function(){
-            SetRuleValueDropDown($(this));
-        });
-    }
-    else{
-        $('.gfield_rule_value_dropdown').live('change', function(){
-            SetRuleValueDropDown($(this));
-        });
-    }
+    gaddon.init();
+
+    $(document).on('change', '.gfield_rule_value_dropdown', function(){
+        SetRuleValueDropDown($(this));
+    });
 
     // init merge tag auto complete
     if(typeof form != 'undefined')
-        new gfMergeTagsObj(form);
+        window.gfMergeTags = new gfMergeTagsObj(form);
 
+	$(document).ready(function(){
+		$(".gform_currency").bind("change", function(){
+			FormatCurrency(this);
+		}).each(function(){
+			FormatCurrency(this);
+		});
+	});
+
+
+	/**
+	 * Dismiss GF dimissible messages.
+	 */
+	$(document).on( "click", ".notice-dismiss", function(){
+		var $div = $(this).closest('div.notice');
+		if ( $div.length > 0 ) {
+			var messageKey = $div.data('gf_dismissible_key');
+			var nonce = $div.data('gf_dismissible_nonce');
+			if ( messageKey  ) {
+				jQuery.ajax({
+					url: ajaxurl,
+					data: {
+						action: 'gf_dismiss_message',
+						message_key: messageKey,
+						nonce: nonce
+					}
+				})
+			}
+		}
+	});
 });
+
+function FormatCurrency(element){
+	if(gf_vars.gf_currency_config){
+		var currency = new Currency(gf_vars.gf_currency_config);
+		var price = currency.toMoney(jQuery(element).val());
+		jQuery(element).val(price);
+	}
+}
 
 function ToggleConditionalLogic(isInit, objectType){
     var speed = isInit ? "" : "slow";
@@ -44,29 +75,36 @@ function ToggleConditionalLogic(isInit, objectType){
 }
 
 function GetConditionalObject(objectType){
+
+    var object = false;
+
     switch(objectType){
-        case "page" :
-        case "field" :
-            return GetSelectedField();
+    case "page":
+    case "field":
+        object = GetSelectedField();
         break;
 
-        case "next_button" :
-            var field = GetSelectedField();
-            return field["nextButton"];
+    case "next_button" :
+        var field = GetSelectedField();
+        object = field["nextButton"];
         break;
 
-        case "confirmation":
-            return confirmation;
+    case "confirmation":
+        object = confirmation;
         break;
 
-        case "notification":
-            return current_notification;
+    case "notification":
+        object = current_notification;
         break;
 
-        default:
-            return form.button;
+    default:
+        object = typeof form != 'undefined' ? form.button : false;
         break;
     }
+
+    object = gform.applyFilters( 'gform_conditional_object', object, objectType )
+
+    return object;
 }
 
 function CreateConditionalLogic(objectType, obj){
@@ -78,40 +116,41 @@ function CreateConditionalLogic(objectType, obj){
     var showSelected = obj.conditionalLogic.actionType == "show" ? "selected='selected'" :"";
     var allSelected = obj.conditionalLogic.logicType == "all" ? "selected='selected'" :"";
     var anySelected = obj.conditionalLogic.logicType == "any" ? "selected='selected'" :"";
-    var imagesUrl = '';
 
     var objText;
-    if(objectType == "field")
+    if (obj['type'] == "section")
+        objText = gf_vars.thisSectionIf;
+    else if(objectType == "field")
         objText = gf_vars.thisFieldIf;
     else if(objectType == "page")
         objText = gf_vars.thisPage;
     else if(objectType == "confirmation")
-        objText = gf_vars.thisConfirmation
+        objText = gf_vars.thisConfirmation;
     else if(objectType == "notification")
-        objText = gf_vars.thisNotification
+        objText = gf_vars.thisNotification;
     else
         objText = gf_vars.thisFormButton;
 
-    var str = "<select id='" + objectType + "_action_type' onchange='SetConditionalProperty(\"" + objectType + "\", \"actionType\", jQuery(this).val());'><option value='show' " + showSelected + ">" + gf_vars.show + "</option><option value='hide' " + hideSelected + ">" + gf_vars.hide + "</option></select>";
-    str += objText;
-    str += "<select id='" + objectType + "_logic_type' onchange='SetConditionalProperty(\"" + objectType + "\", \"logicType\", jQuery(this).val());'><option value='all' " + allSelected + ">" + gf_vars.all + "</option><option value='any' " + anySelected + ">" + gf_vars.any + "</option></select>";
-    str += " " + gf_vars.ofTheFollowingMatch;
+    var descPieces = {};
+    descPieces.actionType = "<select id='" + objectType + "_action_type' onchange='SetConditionalProperty(\"" + objectType + "\", \"actionType\", jQuery(this).val());'><option value='show' " + showSelected + ">" + gf_vars.show + "</option><option value='hide' " + hideSelected + ">" + gf_vars.hide + "</option></select>";
+    descPieces.objectDescription = objText;
+    descPieces.logicType = "<select id='" + objectType + "_logic_type' onchange='SetConditionalProperty(\"" + objectType + "\", \"logicType\", jQuery(this).val());'><option value='all' " + allSelected + ">" + gf_vars.all + "</option><option value='any' " + anySelected + ">" + gf_vars.any + "</option></select>";
+    descPieces.ofTheFollowingMatch = gf_vars.ofTheFollowingMatch;
 
-    for(var i=0; i < obj.conditionalLogic.rules.length; i++){
-        var isSelected = obj.conditionalLogic.rules[i].operator == "is" ? "selected='selected'" :"";
-        var isNotSelected = obj.conditionalLogic.rules[i].operator == "isnot" ? "selected='selected'" :"";
-        var greaterThanSelected = obj.conditionalLogic.rules[i].operator == ">" ? "selected='selected'" :"";
-        var lessThanSelected = obj.conditionalLogic.rules[i].operator == "<" ? "selected='selected'" :"";
-        var containsSelected = obj.conditionalLogic.rules[i].operator == "contains" ? "selected='selected'" :"";
-        var startsWithSelected = obj.conditionalLogic.rules[i].operator == "starts_with" ? "selected='selected'" :"";
-        var endsWithSelected = obj.conditionalLogic.rules[i].operator == "ends_with" ? "selected='selected'" :"";
+    var descPiecesArr = makeArray( descPieces );
 
-        str += "<div width='100%'>" + GetRuleFields(objectType, i, obj.conditionalLogic.rules[i].fieldId);
-        str += "<select id='" + objectType + "_rule_operator_" + i + "' onchange='SetRuleProperty(\"" + objectType + "\", " + i + ", \"operator\", jQuery(this).val());'><option value='is' " + isSelected + ">" + gf_vars.is + "</option><option value='isnot' " + isNotSelected + ">" + gf_vars.isNot + "</option><option value='>' " + greaterThanSelected + ">" + gf_vars.greaterThan + "</option><option value='<' " + lessThanSelected + ">" + gf_vars.lessThan + "</option><option value='contains' " + containsSelected + ">" + gf_vars.contains + "</option><option value='starts_with' " + startsWithSelected + ">" + gf_vars.startsWith + "</option><option value='ends_with' " + endsWithSelected + ">" + gf_vars.endsWith + "</option></select>";
-        str += GetRuleValues(objectType, i, obj.conditionalLogic.rules[i].fieldId, obj.conditionalLogic.rules[i].value);
-        str += "<img src='" + gf_vars.baseUrl + "/images/add.png' class='add_field_choice' title='add another rule' alt='add another rule' style='cursor:pointer; margin:0 3px;' onclick=\"InsertRule('" + objectType + "', " + (i+1) + ");\" />";
+    var str = descPiecesArr.join(' ');
+    str = gform.applyFilters( 'gform_conditional_logic_description', str, descPieces, objectType, obj );
+    var i, rule;
+    for(i=0; i < obj.conditionalLogic.rules.length; i++){
+        rule = obj.conditionalLogic.rules[i];
+        str += "<div width='100%' class='gf_conditional_logic_rules_container'>";
+        str += GetRuleFields(objectType, i, rule.fieldId);
+        str += GetRuleOperators(objectType, i, rule.fieldId, rule.operator);
+        str += GetRuleValues(objectType, i, rule.fieldId, rule.value);
+        str += "<a class='add_field_choice' title='add another rule' onclick=\"InsertRule('" + objectType + "', " + (i+1) + ");\" onkeypress=\"InsertRule('" + objectType + "', " + (i+1) + ");\" ><i class='gficon-add'></i></a>";
         if(obj.conditionalLogic.rules.length > 1 )
-            str += "<img src='" + gf_vars.baseUrl + "/images/remove.png' title='remove this rule' alt='remove this rule' class='delete_field_choice' style='cursor:pointer;' onclick=\"DeleteRule('" + objectType + "', " + i + ");\" /></li>";
+            str += "<a class='delete_field_choice' title='remove this rule' onclick=\"DeleteRule('" + objectType + "', " + i + ");\" onkeypress=\"DeleteRule('" + objectType + "', " + i + ");\" ><i class='gficon-subtract'></i></a></li>";
 
         str += "</div>";
     }
@@ -119,35 +158,145 @@ function CreateConditionalLogic(objectType, obj){
     jQuery("#" + objectType + "_conditional_logic_container").html(str);
 
     //initializing placeholder script
-    jQuery.Placeholder.init();
+    Placeholders.enable();
 }
 
-function GetRuleFields(objectType, ruleIndex, selectedFieldId){
-    var str = "<select id='" + objectType + "_rule_field_" + ruleIndex + "' class='gfield_rule_select' onchange='jQuery(\"#" + objectType + "_rule_value_" + ruleIndex + "\").replaceWith(GetRuleValues(\"" + objectType + "\", " + ruleIndex + ", jQuery(this).val())); SetRule(\"" + objectType + "\", " + ruleIndex + "); '>";
-    var inputType;
-    for(var i=0; i<form.fields.length; i++){
-        if(IsConditionalLogicField(form.fields[i])){
-            var selected = form.fields[i].id == selectedFieldId ? "selected='selected'" : "";
-            var label = form.fields[i].adminLabel ? form.fields[i].adminLabel : form.fields[i].label
-            str += "<option value='" + form.fields[i].id + "' " + selected + ">" + label + "</option>";
-        }
+function GetRuleOperators( objectType, i, fieldId, selectedOperator ) {
+    var str, supportedOperators, operators, selected;
+    supportedOperators = {"is":"is","isnot":"isNot", ">":"greaterThan", "<":"lessThan", "contains":"contains", "starts_with":"startsWith", "ends_with":"endsWith"};
+    str = "<select id='" + objectType + "_rule_operator_" + i + "' class='gfield_rule_select' onchange='SetRuleProperty(\"" + objectType + "\", " + i + ", \"operator\", jQuery(this).val());var valueSelector=\"#" + objectType + "_rule_value_" + i + "\"; jQuery(valueSelector).replaceWith(GetRuleValues(\"" + objectType + "\", " + i + ",\"" + fieldId + "\", \"\"));jQuery(valueSelector).change();'>";
+    operators = IsEntryMeta(fieldId) ? GetOperatorsForMeta(supportedOperators, fieldId) : supportedOperators;
+
+    operators = gform.applyFilters( 'gform_conditional_logic_operators', operators, objectType, fieldId );
+
+    jQuery.each(operators,function(operator, stringKey){
+        selected = selectedOperator == operator ? "selected='selected'" : "";
+        str += "<option value='" + operator + "' " + selected + ">" + gf_vars[stringKey] + "</option>"
+    });
+    str +="</select>";
+    return str;
+}
+
+function GetOperatorsForMeta(supportedOperators, key){
+    var operators = {};
+    if(entry_meta[key] && entry_meta[key].filter && entry_meta[key].filter.operators ){
+
+        jQuery.each(supportedOperators,function(operator, stringKey){
+            if(jQuery.inArray(operator, entry_meta[key].filter.operators) >= 0)
+                operators[operator] = stringKey;
+        });
+    } else {
+        operators = supportedOperators;
     }
+    return operators;
+}
+
+function GetRuleFields( objectType, ruleIndex, selectedFieldId ) {
+
+    var str = "<select id='" + objectType + "_rule_field_" + ruleIndex + "' class='gfield_rule_select' onchange='jQuery(\"#" + objectType + "_rule_operator_" + ruleIndex + "\").replaceWith(GetRuleOperators(\"" + objectType + "\", " + ruleIndex + ", jQuery(this).val()));jQuery(\"#" + objectType + "_rule_value_" + ruleIndex + "\").replaceWith(GetRuleValues(\"" + objectType + "\", " + ruleIndex + ", jQuery(this).val())); SetRule(\"" + objectType + "\", " + ruleIndex + "); '>";
+    var options = [];
+
+    for( var i = 0; i < form.fields.length; i++ ) {
+
+        var field = form.fields[i];
+
+        if( IsConditionalLogicField( field ) ) {
+
+            // @todo: the inputType check will likely go away once we've figured out how we're going to manage inputs moving forward
+            if( field.inputs && jQuery.inArray( GetInputType( field ), [ 'checkbox', 'email' ] ) == -1 ) {
+                for( var j = 0; j < field.inputs.length; j++ ) {
+                    var input = field.inputs[j];
+                    if( ! input.isHidden ) {
+                        options.push( {
+                            label: GetLabel( field, input.id ),
+                            value: input.id
+                        } );
+                    }
+                }
+            } else {
+                options.push( {
+                    label: GetLabel( field ),
+                    value: field.id
+                } );
+            }
+
+        }
+
+    }
+
+    // get entry meta fields and append to existing fields
+    jQuery.merge(options, GetEntryMetaFields( selectedFieldId ) );
+
+    options = gform.applyFilters( 'gform_conditional_logic_fields', options, form, selectedFieldId );
+
+    str += GetRuleFieldsOptions( options, selectedFieldId );
+
     str += "</select>";
     return str;
 }
 
+function GetRuleFieldsOptions( options, selectedFieldId ){
+    var str = '';
+    for( var i = 0; i < options.length; i++ ) {
+
+        var option = options[i];
+        if ( typeof option.options !== 'undefined' ) {
+            str += '<optgroup label=" ' + option.label + '">';
+            str += GetRuleFieldsOptions( option.options, selectedFieldId );
+            str += '</optgroup>';
+        } else {
+            var selected = option.value == selectedFieldId ? "selected='selected'" : '';
+
+            str += "<option value='" + option.value + "' " + selected + ">" + option.label + "</option>";
+        }
+    }
+    return str;
+}
+
+function GetEntryMetaFields( selectedFieldId ) {
+
+    var options = [], selected, label;
+
+    if(typeof entry_meta == 'undefined')
+        return options;
+
+    jQuery.each( entry_meta, function( key, meta ) {
+
+        if(typeof meta.filter == 'undefined')
+            return;
+
+       options.push( {
+            label: meta.label,
+            value: key,
+            isSelected: selectedFieldId == key ? "selected='selected'" : ""
+        } );
+
+    });
+
+    return options;
+}
+
 function IsConditionalLogicField(field){
-    inputType = field.inputType ? field.inputType : field.type;
-    var supported_fields = ["checkbox", "radio", "select", "text", "website", "textarea", "email", "hidden", "number", "phone", "multiselect", "post_title",
-                            "post_tags", "post_custom_field", "post_content", "post_excerpt"];
+    var inputType = field.inputType ? field.inputType : field.type;
+    var supported_fields = GetConditionalLogicFields();
 
     var index = jQuery.inArray(inputType, supported_fields);
     var isConditionalLogicField = index >= 0 ? true : false;
-	isConditionalLogicField = gform.applyFilters('gform_is_conditional_logic_field', isConditionalLogicField, field);
+    isConditionalLogicField = gform.applyFilters( 'gform_is_conditional_logic_field', isConditionalLogicField, field );
     return isConditionalLogicField;
 }
 
-function GetRuleValues(objectType, ruleIndex, selectedFieldId, selectedValue){
+function IsEntryMeta(key){
+
+    return typeof entry_meta != 'undefined' && typeof entry_meta[key] != 'undefined';
+}
+
+function GetRuleValues(objectType, ruleIndex, selectedFieldId, selectedValue, inputName){
+
+    if(!inputName)
+        inputName = false;
+
+    var dropdownId = inputName == false ? objectType + '_rule_value_' + ruleIndex : inputName;
 
     if(selectedFieldId == 0)
         selectedFieldId = GetFirstRuleField();
@@ -155,60 +304,117 @@ function GetRuleValues(objectType, ruleIndex, selectedFieldId, selectedValue){
     if(selectedFieldId == 0)
         return "";
 
-    var isAnySelected = false;
-    var field = GetFieldById(selectedFieldId);
+    var field = GetFieldById(selectedFieldId),
+        isEntryMeta = IsEntryMeta(selectedFieldId),
+        obj = GetConditionalObject(objectType),
+        rule = obj["conditionalLogic"]["rules"][ruleIndex],
+        operator = rule.operator,
+        str = "";
 
-    if(!field)
-        return "";
+    if(field && field["type"] == "post_category" && field["displayAllCategories"]){
 
-    var str = "";
+        var dropdown = jQuery('#' + dropdownId + ".gfield_category_dropdown");
 
-    if(field["type"] == "post_category" && field["displayAllCategories"]){
-
-        var dropdown_id = objectType + '_rule_value_' + ruleIndex;
-        var dropdown = jQuery('#' + dropdown_id + ".gfield_category_dropdown");
-
-        //don't load category drop down if it already exists (to avoid unecessary ajax requests)
+        //don't load category drop down if it already exists (to avoid unnecessary ajax requests)
         if(dropdown.length > 0){
 
-            var options = dropdown.html();
-            options = options.replace("value=\"" + selectedValue + "\"", "value=\"" + selectedValue + "\" selected=\"selected\"");
-            str = "<select id='" + dropdown_id + "' class='gfield_rule_select gfield_rule_value_dropdown gfield_category_dropdown'>" + options + "</select>";
+	        var options = dropdown.html();
+	        options = options.replace(/ selected="selected"/g, '');
+	        options = options.replace("value=\"" + selectedValue + "\"", "value=\"" + selectedValue + "\" selected=\"selected\"");
+	        str = "<select id='" + dropdownId + "' class='gfield_rule_select gfield_rule_value_dropdown gfield_category_dropdown'>" + options + "</select>";
         }
         else{
+            var placeholderName = inputName == false ? "gfield_ajax_placeholder_" + ruleIndex : inputName + "_placeholder";
+
             //loading categories via AJAX
             jQuery.post(ajaxurl,{   action:"gf_get_post_categories",
                                     objectType: objectType,
                                     ruleIndex: ruleIndex,
+                                    inputName: inputName,
                                     selectedValue: selectedValue},
                                 function(dropdown_string){
                                     if(dropdown_string){
-                                        jQuery('#gfield_ajax_placeholder_' + ruleIndex).replaceWith(dropdown_string.trim());
+                                        jQuery('#' + placeholderName).replaceWith(dropdown_string.trim());
 
-                                        SetRuleProperty(objectType, ruleIndex, "value", jQuery("#" + dropdown_id).val());
+                                        SetRuleProperty(objectType, ruleIndex, "value", jQuery("#" + dropdownId).val());
                                     }
                                 }
                         );
 
             //will be replaced by real drop down during the ajax callback
-            str = "<select id='gfield_ajax_placeholder_" + ruleIndex + "' class='gfield_rule_select'><option>" + gf_vars["loading"] + "</option></select>";
+            str = "<select id='" + placeholderName + "' class='gfield_rule_select'><option>" + gf_vars["loading"] + "</option></select>";
         }
     }
-    else if(field.choices){
-        str = GetRuleValuesDropDown(field.choices, objectType, ruleIndex, selectedValue);
+    else if(field && field.choices && jQuery.inArray(operator, ["is", "isnot"]) > -1){
+        var ruleChoices = field.placeholder ? [{
+            text: field.placeholder,
+            value: ''
+        }].concat(field.choices) : field.choices;
+        str = GetRuleValuesDropDown(ruleChoices, objectType, ruleIndex, selectedValue, inputName);
+    }
+    else if( IsAddressSelect( selectedFieldId, field )  ) {
+
+        //loading categories via AJAX
+        jQuery.post( ajaxurl, {
+            action:       'gf_get_address_rule_values_select',
+            address_type: field.addressType ? field.addressType : gf_vars.defaultAddressType,
+            value:        selectedValue,
+            id:           dropdownId,
+            form_id:      field.formId
+        }, function( selectMarkup ) {
+            if( selectMarkup ) {
+                $select = jQuery( selectMarkup.trim() );
+                $placeholder = jQuery( '#' + dropdownId );
+                $placeholder.replaceWith( $select );
+                SetRuleProperty( objectType, ruleIndex, 'value', $select.val() );
+            }
+        } );
+
+        // will be replaced by real drop down during the ajax callback
+        str = "<select id='" + dropdownId + "' class='gfield_rule_select'><option>" + gf_vars['loading'] + "</option></select>";
+
+    }
+    else if (isEntryMeta && entry_meta && entry_meta[selectedFieldId] &&  entry_meta[selectedFieldId].filter && typeof entry_meta[selectedFieldId].filter.choices != 'undefined') {
+        str = GetRuleValuesDropDown(entry_meta[selectedFieldId].filter.choices, objectType, ruleIndex, selectedValue, inputName);
     }
     else{
         selectedValue = selectedValue ? selectedValue.replace(/'/g, "&#039;") : "";
 
         //create a text field for fields that don't have choices (i.e text, textarea, number, email, etc...)
-        str = "<input type='text' placeholder='" + gf_vars["enterValue"] + "' class='gfield_rule_select' id='" + objectType + "_rule_value_" + ruleIndex + "' value='" + selectedValue.replace(/'/g, "&#039;") + "' onchange='SetRuleProperty(\"" + objectType + "\", " + ruleIndex + ", \"value\", jQuery(this).val());' onkeyup='SetRuleProperty(\"" + objectType + "\", " + ruleIndex + ", \"value\", jQuery(this).val());'>";
+        str = "<input type='text' placeholder='" + gf_vars["enterValue"] + "' class='gfield_rule_select gfield_rule_input' id='" + dropdownId + "' name='" + dropdownId + "' value='" + selectedValue.replace(/'/g, "&#039;") + "' onchange='SetRuleProperty(\"" + objectType + "\", " + ruleIndex + ", \"value\", jQuery(this).val());' onkeyup='SetRuleProperty(\"" + objectType + "\", " + ruleIndex + ", \"value\", jQuery(this).val());'>";
     }
+
+    str = gform.applyFilters( 'gform_conditional_logic_values_input', str, objectType, ruleIndex, selectedFieldId, selectedValue )
 
     return str;
 }
+/**
+ * Determine if current Address field input ID is a select (i.e. US => State, International => Country)
+ * @param inputId string Address field input ID
+ * @param field object Address field
+ * @returns {boolean}
+ * @constructor
+ */
+function IsAddressSelect( inputId, field ) {
+
+    if( ! field || GetInputType( field ) != 'address' ) {
+        return false;
+    }
+
+    var addressType = field.addressType ? field.addressType : gf_vars.defaultAddressType;
+
+    if( ! gf_vars.addressTypes[ addressType ] ) {
+        return false;
+    }
+
+    var addressTypeObj = gf_vars.addressTypes[ addressType ],
+        isCountryInput = inputId == field.id + '.6',
+        isStateInput   = inputId == field.id + '.4';
+
+    return ( isCountryInput && addressType == 'international' ) || ( isStateInput && typeof addressTypeObj.states == 'object' );
+}
 
 function GetFirstRuleField(){
-    var inputType;
     for(var i=0; i<form.fields.length; i++){
         if(IsConditionalLogicField(form.fields[i]))
             return form.fields[i].id;
@@ -217,9 +423,12 @@ function GetFirstRuleField(){
     return 0;
 }
 
-function GetRuleValuesDropDown(choices, objectType, ruleIndex, selectedValue){
+function GetRuleValuesDropDown(choices, objectType, ruleIndex, selectedValue, inputName){
+
+    var dropdown_id = inputName == false ? objectType + '_rule_value_' + ruleIndex : inputName;
+
     //create a drop down for fields that have choices (i.e. drop down, radio, checkboxes, etc...)
-    str = "<select class='gfield_rule_select gfield_rule_value_dropdown' id='" + objectType + "_rule_value_" + ruleIndex + "'>";
+    var str = "<select class='gfield_rule_select gfield_rule_value_dropdown' id='" + dropdown_id + "' name='" + dropdown_id + "'>";
 
     var isAnySelected = false;
     for(var i=0; i<choices.length; i++){
@@ -228,8 +437,9 @@ function GetRuleValuesDropDown(choices, objectType, ruleIndex, selectedValue){
         var selected = isSelected ? "selected='selected'" : "";
         if(isSelected)
             isAnySelected = true;
-
-        str += "<option value='" + choiceValue.replace(/'/g, "&#039;") + "' " + selected + ">" + choices[i].text + "</option>";
+		choiceValue = choiceValue.replace(/'/g, "&#039;");
+		var choiceText = jQuery.trim(jQuery('<div>'+choices[i].text+'</div>').text()) === '' ? choiceValue : choices[i].text;
+        str += "<option value='" + choiceValue.replace(/'/g, "&#039;") + "' " + selected + ">" + choiceText + "</option>";
     }
 
     if(!isAnySelected && selectedValue && selectedValue != "")
@@ -240,13 +450,18 @@ function GetRuleValuesDropDown(choices, objectType, ruleIndex, selectedValue){
     return str;
 
 }
+function isEmpty(str){
+	return
+}
+
 
 function SetRuleProperty(objectType, ruleIndex, name, value){
     var obj = GetConditionalObject(objectType);
     obj.conditionalLogic.rules[ruleIndex][name] = value;
 }
 
-function GetFieldById(id){
+function GetFieldById( id ) {
+    id = parseInt( id );
     for(var i=0; i<form.fields.length; i++){
         if(form.fields[i].id == id)
             return form.fields[i];
@@ -260,16 +475,16 @@ function SetConditionalProperty(objectType, name, value){
 }
 
 function SetRuleValueDropDown(element){
-        //parsing ID to get objectType and ruleIndex
-        var ary = element.attr("id").split('_rule_value_');
+    //parsing ID to get objectType and ruleIndex
+    var ary = element.attr("id").split('_rule_value_');
 
-        if(ary.length < 2)
-            return;
+    if(ary.length < 2)
+        return;
 
-        var objectType = ary[0];
-        var ruleIndex = ary[1];
+    var objectType = ary[0];
+    var ruleIndex = ary[1];
 
-        SetRuleProperty(objectType, ruleIndex, "value", element.val());
+    SetRuleProperty(objectType, ruleIndex, "value", element.val());
 }
 
 function InsertRule(objectType, ruleIndex){
@@ -301,8 +516,8 @@ function TruncateRuleText(text){
 
 function gfAjaxSpinner(elem, imageSrc, inlineStyles) {
 
-    var imageSrc = typeof imageSrc == 'undefined' ? '/images/ajax-loader.gif': imageSrc;
-    var inlineStyles = typeof inlineStyles != 'undefined' ? inlineStyles : '';
+    imageSrc     = typeof imageSrc == 'undefined' || ! imageSrc ? gf_vars.baseUrl + '/images/spinner.gif': imageSrc;
+    inlineStyles = typeof inlineStyles != 'undefined' ? inlineStyles : '';
 
     this.elem = elem;
     this.image = '<img class="gfspinner" src="' + imageSrc + '" style="' + inlineStyles + '" />';
@@ -311,11 +526,11 @@ function gfAjaxSpinner(elem, imageSrc, inlineStyles) {
         this.spinner = jQuery(this.image);
         jQuery(this.elem).after(this.spinner);
         return this;
-    }
+    };
 
     this.destroy = function() {
         jQuery(this.spinner).remove();
-    }
+    };
 
     return this.init();
 }
@@ -325,20 +540,21 @@ function InsertVariable(element_id, callback, variable) {
     if(!variable)
         variable = jQuery('#' + element_id + '_variable_select').val();
 
-    var messageElement = jQuery("#" + element_id);
+    var input = document.getElementById (element_id);
+    var $input = jQuery(input);
 
     if(document.selection) {
         // Go the IE way
-        messageElement[0].focus();
+        $input[0].focus();
         document.selection.createRange().text=variable;
     }
-    else if(messageElement[0].selectionStart) {
-        // Go the Gecko way
-        obj = messageElement[0]
-        obj.value = obj.value.substr(0, obj.selectionStart) + variable + obj.value.substr(obj.selectionEnd, obj.value.length);
-    }
-    else {
-        messageElement.val(variable + messageElement.val());
+    else if('selectionStart' in input) {
+        var startPos = input.selectionStart;
+        input.value = input.value.substr(0, startPos) + variable + input.value.substr(input.selectionEnd, input.value.length);
+        input.selectionStart = startPos + input.value.length;
+        input.selectionEnd = startPos + input.value.length;
+    } else {
+        $input.val(variable + messageElement.val());
     }
 
     var variableSelect = jQuery('#' + element_id + '_variable_select');
@@ -383,6 +599,10 @@ function GetInput(field, id){
     if( typeof field['inputs'] != 'undefined' && jQuery.isArray(field['inputs']) ) {
 
         for(i in field['inputs']) {
+
+            if(!field['inputs'].hasOwnProperty(i))
+                continue;
+
             var input = field['inputs'][i];
             if(input.id == id)
                 return input;
@@ -402,26 +622,29 @@ function IsProductField(fieldType) {
 }
 
 function GetLabel(field, inputId, inputOnly) {
-
     if(typeof inputId == 'undefined')
         inputId = 0;
 
-    if(typeof inputOnly == 'undefind')
+    if(typeof inputOnly == 'undefined')
         inputOnly = false;
 
-    //TODO: support getting admin label when appropriate
-    //$field_label = (IS_ADMIN || RG_CURRENT_PAGE == "select_columns.php" || RG_CURRENT_PAGE == "print-entry.php" || rgget("gf_page", $_GET) == "select_columns" || rgget("gf_page", $_GET) == "print-entry") && !rgempty("adminLabel", $field) ? rgar($field,"adminLabel") : rgar($field,"label");
-
     var input = GetInput(field, inputId);
+    var displayLabel = "";
 
-    if(field.type == "checkbox" && input != null) {
-        return input.label;
+    if (field.adminLabel != undefined && field.adminLabel.length > 0){
+		//use admin label
+		displayLabel = field.adminLabel;
     }
-    else if(input != null) {
-        return inputOnly ? input.label : field.label + ' (' + input.label + ')';
+    else{
+    	//use regular label
+		displayLabel = field.label;
+    }
+
+    if(input != null) {
+        return inputOnly ? input.label : displayLabel + ' (' + input.label + ')';
     }
     else {
-        return field.label;
+    	return displayLabel;
     }
 
 }
@@ -431,6 +654,11 @@ function DeleteNotification(notificationId) {
     jQuery('#action').val('delete');
     jQuery('#notification_list_form')[0].submit();
 }
+function DuplicateNotification(notificationId) {
+    jQuery('#action_argument').val(notificationId);
+    jQuery('#action').val('duplicate');
+    jQuery('#notification_list_form')[0].submit();
+}
 
 function DeleteConfirmation(confirmationId) {
     jQuery('#action_argument').val(confirmationId);
@@ -438,14 +666,14 @@ function DeleteConfirmation(confirmationId) {
     jQuery('#confirmation_list_form')[0].submit();
 }
 
-function SetConfirmationConditionalLogic(isChecked) {
+function DuplicateConfirmation(confirmationId) {
+    jQuery('#action_argument').val(confirmationId);
+    jQuery('#action').val('duplicate');
+    jQuery('#confirmation_list_form')[0].submit();
+}
 
-    if(typeof isChecked == 'undefined') {
-        confirmation['conditionalLogic'] = jQuery('#conditional_logic').val() ? jQuery.parseJSON(jQuery('#conditional_logic').val()) : null;
-    } else {
-        confirmation['conditionalLogic'] = isChecked ? new ConditionalLogic() : null;
-    }
-
+function SetConfirmationConditionalLogic() {
+   confirmation['conditionalLogic'] = jQuery('#conditional_logic').val() ? jQuery.parseJSON(jQuery('#conditional_logic').val()) : new ConditionalLogic();
 }
 
 function ToggleConfirmation() {
@@ -456,21 +684,22 @@ function ToggleConfirmation() {
 
     if(isRedirect){
         showElement = ".form_confirmation_redirect_container";
-        hideElement = "#form_confirmation_message_container, #form_confirmation_page_container";
+        hideElement = "#form_confirmation_message_container, .form_confirmation_page_container";
         ClearConfirmationSettings(['text', 'page']);
     }
     else if(isPage){
-        showElement = "#form_confirmation_page_container";
+        showElement = ".form_confirmation_page_container";
         hideElement = "#form_confirmation_message_container, .form_confirmation_redirect_container";
         ClearConfirmationSettings(['text', 'redirect']);
     }
     else{
         showElement = "#form_confirmation_message_container";
-        hideElement = "#form_confirmation_page_container, .form_confirmation_redirect_container";
+        hideElement = ".form_confirmation_page_container, .form_confirmation_redirect_container";
         ClearConfirmationSettings(['page', 'redirect']);
     }
 
     ToggleQueryString();
+    TogglePageQueryString()
 
     jQuery(hideElement).hide();
     jQuery(showElement).show();
@@ -488,11 +717,26 @@ function ToggleQueryString() {
     }
 }
 
+function TogglePageQueryString() {
+    if(jQuery('#form_page_use_querystring').is(":checked")){
+        jQuery('#form_page_querystring_container').show();
+    }
+    else{
+        jQuery('#form_page_querystring_container').hide();
+        jQuery("#form_page_querystring").val('');
+        jQuery("#form_page_use_querystring").val('');
+    }
+}
+
 function ClearConfirmationSettings(type) {
 
     var types = jQuery.isArray(type) ? type : [type];
 
     for(i in types) {
+
+        if(!types.hasOwnProperty(i))
+            continue;
+
         switch(types[i]) {
         case 'text':
             jQuery('#form_confirmation_message').val('');
@@ -500,6 +744,8 @@ function ClearConfirmationSettings(type) {
             break;
         case 'page':
             jQuery('#form_confirmation_page').val('');
+            jQuery('#form_page_querystring').val('');
+            jQuery('#form_page_use_querystring').prop('checked', false);
             break;
         case 'redirect':
             jQuery('#form_confirmation_url').val('');
@@ -524,6 +770,96 @@ function ConfirmationObj() {
     this.isDefault = 0;
 }
 
+(function (gaddon, $, undefined) {
+
+    gaddon.init = function () {
+
+        var defaultVal, valueExists, value;
+
+        f = window.form;
+        var id = 0;
+        if(isSet(f)){
+            id = f.id
+        }
+
+    };
+
+    gaddon.toggleFeedActive = function(img, addon_slug, feed_id){
+        var is_active = img.src.indexOf("active1.png") >=0 ? 0 : 1;
+        img.src = img.src.replace("active1.png", "spinner.gif");
+        img.src = img.src.replace("active0.png", "spinner.gif");
+
+        jQuery.post(ajaxurl, {
+            action: "gf_feed_is_active_" + addon_slug,
+            feed_id: feed_id,
+            is_active: is_active
+            },
+            function(response){
+                if(is_active){
+                    img.src = img.src.replace("spinner.gif", "active1.png");
+                    jQuery(img).attr('title',gf_vars.inactive).attr('alt', gf_vars.inactive);
+                }
+                else{
+                    img.src = img.src.replace("spinner.gif", "active0.png");
+                    jQuery(img).attr('title',gf_vars.active).attr('alt', gf_vars.active);
+                }
+            }
+        );
+
+        return true;
+    };
+
+    gaddon.deleteFeed = function (id) {
+        $("#single_action").val("delete");
+        $("#single_action_argument").val(id);
+        $("#gform-settings").submit();
+    };
+
+    gaddon.duplicateFeed = function (id) {
+        $("#single_action").val("duplicate");
+        $("#single_action_argument").val(id);
+        $("#gform-settings").submit();
+    };
+
+    function isValidJson(str) {
+        try {
+            JSON.parse(str);
+        } catch (e) {
+            return false;
+        }
+        return true;
+    }
+
+    function isSet($var) {
+        if (typeof $var != 'undefined')
+            return true
+        return false
+    }
+
+    function rgar(array, name) {
+        if (typeof array[name] != 'undefined')
+            return array[name];
+        return '';
+    }
+
+}(window.gaddon = window.gaddon || {}, jQuery));
+
+function Copy(variable){
+
+    if(!variable)
+        return variable;
+    else if(typeof variable != 'object')
+        return variable;
+
+    variable = jQuery.isArray(variable) ? variable.slice() : jQuery.extend({}, variable);
+
+    for(i in variable) {
+        variable[i] = Copy(variable[i]);
+    }
+
+    return variable;
+}
+
 var gfMergeTagsObj = function(form) {
 
     this.form = form;
@@ -541,7 +877,8 @@ var gfMergeTagsObj = function(form) {
         jQuery( ".merge-tag-support" )
             // don't navigate away from the field on tab when selecting an item
             .bind( "keydown", function( event ) {
-                if ( event.keyCode === jQuery.ui.keyCode.TAB && jQuery( this ).data( "autocomplete" ).menu.active ) {
+                var menuActive = jQuery( this ).data( "autocomplete" ) && jQuery( this ).data( "autocomplete" ).menu ? jQuery( this ).data( "autocomplete" ).menu.active : false;
+                if ( event.keyCode === jQuery.ui.keyCode.TAB && menuActive ) {
                     event.preventDefault();
                 }
             })
@@ -582,12 +919,13 @@ var gfMergeTagsObj = function(form) {
                         terms.push( ui.item.value );
 
                         this.value = terms.join( " " );
+                        elem.trigger('input').trigger('propertychange');
                         return false;
                     }
                 });
 
                 var positionClass = gfMergeTags.getClassProperty(this, 'position');
-                var mergeTagIcon = jQuery('<span class="all-merge-tags ' + positionClass + ' ' + classStr + '"><a class="open-list tooltip-merge-tag" tooltip="' + gf_vars.mergeTagsTooltip + '">All Merge Tags</a></span>');
+                var mergeTagIcon = jQuery('<span class="all-merge-tags ' + positionClass + ' ' + classStr + '"><a class="open-list tooltip-merge-tag" title="' + gf_vars.mergeTagsTooltip + '"></a></span>');
 
                 // add the target element to the merge tag icon data for reference later when determining where the selected merge tag should be inserted
                 mergeTagIcon.data('targetElement', elem.attr('id') );
@@ -602,11 +940,12 @@ var gfMergeTagsObj = function(form) {
 
             });
 
-        jQuery('.tooltip-merge-tag').each(function() {
-            var options = gform_get_tooltip_options( this, "gformsstyle_left", "topLeft", "bottomRight" );
-            options.show.delay = 1250;
-            gform_apply_tooltip( this, options );
-        });
+        jQuery('.tooltip-merge-tag').tooltip({
+                show: {delay:1250},
+                content: function () {
+                    return jQuery(this).prop('title');
+                }
+         });
 
         jQuery('.all-merge-tags a.open-list').click(function() {
 
@@ -628,8 +967,7 @@ var gfMergeTagsObj = function(form) {
                     InsertVariable( input.attr('id'), null, value );
                 }
 
-                // trigger the change event to fire any functions tied to this input's onchange
-                input.change();
+				input.trigger('input').trigger('propertychange');
 
                 gfMergeTags.mergeTagList.hide();
 
@@ -654,19 +992,19 @@ var gfMergeTagsObj = function(form) {
                 gfMergeTags.mergeTagList.hide();
         });
 
-    }
+    };
 
     this.split = function( val ) {
         return val.split(' ');
-    }
+    };
 
     this.extractLast = function( term ) {
         return this.split( term ).pop();
-    }
+    };
 
     this.startsWith = function(string, value) {
         return string.indexOf(value) === 0;
-    }
+    };
 
     this.getMergeTags = function(fields, elementId, hideAllFields, excludeFieldTypes, isPrepop, option) {
 
@@ -687,6 +1025,9 @@ var gfMergeTagsObj = function(form) {
             // group fields by required, optional and pricing
             for(i in fields) {
 
+                if(!fields.hasOwnProperty(i))
+                    continue;
+
                 var field = fields[i];
 
                 if(field['displayOnly'])
@@ -702,24 +1043,42 @@ var gfMergeTagsObj = function(form) {
 
                     case 'name':
 
+                    	var requiredField = Copy(field);
+                        var prefix, middle, suffix, optionalField;
+
                         if(field['nameFormat'] == 'extended') {
 
-                            var prefix = GetInput(field, field.id + '.2');
-                            var suffix = GetInput(field, field.id + '.8');
+                            prefix = GetInput(field, field.id + '.2');
+                            suffix = GetInput(field, field.id + '.8');
 
-                            var optionalField = field;
-                            optionField['inputs'] = [prefix, suffix];
+                            optionalField = Copy(field);
+                            optionalField['inputs'] = [prefix, suffix];
 
                             // add optional name fields to optional list
                             optionalFields.push(optionalField);
 
-                            // remove option name fields from required list
-                            delete field.inputs[0];
-                            delete field.inputs[3];
+                            // remove optional name fields from required list
+                            delete requiredField.inputs[0];
+                            delete requiredField.inputs[3];
+                        } else if(field['nameFormat'] == 'advanced') {
 
+                            prefix = GetInput(field, field.id + '.2');
+                            middle = GetInput(field, field.id + '.4');
+                            suffix = GetInput(field, field.id + '.8');
+
+                            optionalField = Copy(field);
+                            optionalField['inputs'] = [prefix, middle, suffix];
+
+                            // add optional name fields to optional list
+                            optionalFields.push(optionalField);
+
+                            // remove optional name fields from required list
+                            delete requiredField.inputs[0];
+                            delete requiredField.inputs[2];
+                            delete requiredField.inputs[4];
                         }
 
-                        requiredFields.push(field);
+                        requiredFields.push(requiredField);
                         break;
 
                     default:
@@ -740,12 +1099,19 @@ var gfMergeTagsObj = function(form) {
 
             if(requiredFields.length > 0) {
                 for(i in requiredFields) {
+                    if(! requiredFields.hasOwnProperty(i))
+                        continue;
+
                     requiredGroup = requiredGroup.concat(this.getFieldMergeTags(requiredFields[i], option));
                 }
             }
 
             if(optionalFields.length > 0) {
                 for(i in optionalFields) {
+
+                    if(!optionalFields.hasOwnProperty(i))
+                        continue;
+
                     optionalGroup = optionalGroup.concat(this.getFieldMergeTags(optionalFields[i], option));
                 }
             }
@@ -756,6 +1122,9 @@ var gfMergeTagsObj = function(form) {
                     pricingGroup.push({ tag: '{pricing_fields}', 'label': this.getMergeTagLabel('{pricing_fields}') });
 
                 for(i in pricingFields) {
+                    if(!pricingFields.hasOwnProperty(i))
+                        continue;
+
                     pricingGroup.concat(this.getFieldMergeTags(pricingFields[i], option));
                 }
 
@@ -769,11 +1138,17 @@ var gfMergeTagsObj = function(form) {
         otherGroup.push( { tag: '{embed_post:ID}', label: this.getMergeTagLabel('{embed_post:ID}') });
         otherGroup.push( { tag: '{embed_post:post_title}', label: this.getMergeTagLabel('{embed_post:post_title}') });
         otherGroup.push( { tag: '{embed_url}', label: this.getMergeTagLabel('{embed_url}') });
-        otherGroup.push( { tag: '{entry_id}', label: this.getMergeTagLabel('{entry_id}') });
-        otherGroup.push( { tag: '{entry_url}', label: this.getMergeTagLabel('{entry_url}') });
-        otherGroup.push( { tag: '{form_id}', label: this.getMergeTagLabel('{form_id}') });
-        otherGroup.push( { tag: '{form_title}', label: this.getMergeTagLabel('{form_title}') });
+
+        // the form and entry objects are not available during replacement of pre-population merge tags
+        if (!isPrepop) {
+            otherGroup.push({tag: '{entry_id}', label: this.getMergeTagLabel('{entry_id}')});
+            otherGroup.push({tag: '{entry_url}', label: this.getMergeTagLabel('{entry_url}')});
+            otherGroup.push({tag: '{form_id}', label: this.getMergeTagLabel('{form_id}')});
+            otherGroup.push({tag: '{form_title}', label: this.getMergeTagLabel('{form_title}')});
+        }
+
         otherGroup.push( { tag: '{user_agent}', label: this.getMergeTagLabel('{user_agent}') });
+        otherGroup.push( { tag: '{referer}', label: this.getMergeTagLabel('{referer}') });
 
         if(HasPostField() && !isPrepop) { // TODO: consider adding support for passing form object or fields array
             otherGroup.push( { tag: '{post_id}', label: this.getMergeTagLabel('{post_id}') });
@@ -787,6 +1162,10 @@ var gfMergeTagsObj = function(form) {
         var customMergeTags = this.getCustomMergeTags();
         if( customMergeTags.tags.length > 0 ) {
             for( i in customMergeTags.tags ) {
+
+                if(! customMergeTags.tags.hasOwnProperty(i))
+                    continue;
+
                 var customMergeTag = customMergeTags.tags[i];
                 customGroup.push( { tag: customMergeTag.tag, label: customMergeTag.label } );
             }
@@ -817,29 +1196,37 @@ var gfMergeTagsObj = function(form) {
                 label: this.getMergeGroupLabel('custom'),
                 tags: customGroup
             }
-        }
+        };
 
-        mergeTags = gform.applyFilters('gform_merge_tags', mergeTags, elementId, hideAllFields, excludeFieldTypes, isPrepop, option);
+        mergeTags = gform.applyFilters('gform_merge_tags', mergeTags, elementId, hideAllFields, excludeFieldTypes, isPrepop, option, this );
 
         return mergeTags;
-    }
+    };
 
     this.getMergeTagLabel = function(tag) {
 
         for(groupName in gf_vars.mergeTags) {
+
+            if(!gf_vars.mergeTags.hasOwnProperty(groupName))
+                continue;
+
             var tags = gf_vars.mergeTags[groupName].tags;
             for(i in tags) {
+
+                if(!tags.hasOwnProperty(i))
+                    continue;
+
                 if(tags[i].tag == tag)
                     return tags[i].label;
             }
         }
 
         return '';
-    }
+    };
 
     this.getMergeGroupLabel = function(group) {
         return gf_vars.mergeTags[group].label;
-    }
+    };
 
     this.getFieldMergeTags = function(field, option) {
 
@@ -851,6 +1238,10 @@ var gfMergeTagsObj = function(form) {
         var tagArgs = inputType == "list" ? ":" + option : ""; //option currently only supported by list field
         var value = '', label = '';
 
+        if(jQuery.inArray(inputType, ['date', 'email', 'time', 'password'])>-1){
+            field['inputs'] = null;
+        }
+
         if( typeof field['inputs'] != 'undefined' && jQuery.isArray(field['inputs']) ) {
 
             if(inputType == 'checkbox') {
@@ -860,7 +1251,13 @@ var gfMergeTagsObj = function(form) {
             }
 
             for(i in field.inputs) {
+
+                if(!field.inputs.hasOwnProperty(i))
+                    continue;
+
                 var input = field.inputs[i];
+                if(inputType == "creditcard" && jQuery.inArray(parseFloat(input.id),[parseFloat(field.id + ".2"), parseFloat(field.id + ".3"), parseFloat(field.id + ".5")]) > -1)
+                    continue;
                 label = GetLabel(field, input.id).replace("'", "\\'");
                 value = "{" + label + ":" + input.id + tagArgs + "}";
                 mergeTags.push( { tag: value, label: label } );
@@ -874,15 +1271,18 @@ var gfMergeTagsObj = function(form) {
         }
 
         return mergeTags;
-    }
+    };
 
     this.getCustomMergeTags = function() {
         for(groupName in gf_vars.mergeTags) {
+            if(!gf_vars.mergeTags.hasOwnProperty(groupName))
+                continue;
+
             if(groupName == 'custom')
                 return gf_vars.mergeTags[groupName];
         }
         return [];
-    }
+    };
 
     this.getAutoCompleteMergeTags = function(elem) {
 
@@ -896,19 +1296,26 @@ var gfMergeTagsObj = function(form) {
         if(isPrepop) {
             hideAllFields = true;
         }
-
         var mergeTags = this.getMergeTags(fields, elementId, hideAllFields, excludeFieldTypes, isPrepop, option);
 
         var autoCompleteTags = [];
         for(group in mergeTags) {
+
+            if(! mergeTags.hasOwnProperty(group))
+                continue;
+
             var tags = mergeTags[group].tags;
             for(i in tags) {
+
+                if(!tags.hasOwnProperty(i))
+                    continue;
+
                 autoCompleteTags.push(tags[i].tag);
             }
         }
 
         return autoCompleteTags;
-    }
+    };
 
     this.getMergeTagListItems = function(elem) {
 
@@ -922,12 +1329,14 @@ var gfMergeTagsObj = function(form) {
         if(isPrepop) {
             hideAllFields = true;
         }
-
         var mergeTags = this.getMergeTags(fields, elementId, hideAllFields, excludeFieldTypes, isPrepop, option);
         var hasMultipleGroups = this.hasMultipleGroups(mergeTags);
         var optionsHTML = '';
 
         for(group in mergeTags) {
+
+            if(! mergeTags.hasOwnProperty(group))
+                continue;
 
             var label = mergeTags[group].label
             var tags = mergeTags[group].tags;
@@ -941,6 +1350,10 @@ var gfMergeTagsObj = function(form) {
                 optionsHTML += '<li class="group-header">' + label + '</li>';
 
             for(i in tags) {
+
+                if(!tags.hasOwnProperty(i))
+                    continue;
+
                 var tag = tags[i];
                 optionsHTML += '<li class=""><a class="" data-value="' + tag.tag + '">' + tag.label + '</a></li>';
             }
@@ -948,16 +1361,20 @@ var gfMergeTagsObj = function(form) {
         }
 
         return optionsHTML;
-    }
+    };
 
     this.hasMultipleGroups = function(mergeTags) {
         var count = 0;
         for(group in mergeTags) {
+
+            if(!mergeTags.hasOwnProperty(group))
+                continue;
+
             if(mergeTags[group].tags.length > 0)
                 count++;
         }
         return count > 1;
-    }
+    };
 
     /**
     * Merge Tag inputs support a system for setting various properties for the merge tags via classes.
@@ -985,6 +1402,9 @@ var gfMergeTagsObj = function(form) {
 
         for(i in classes) {
 
+            if(!classes.hasOwnProperty(i))
+                continue;
+
             var pieces = classes[i].split('-');
 
             // if this is not a merge tag class or not the property we are looking for, skip
@@ -1008,13 +1428,82 @@ var gfMergeTagsObj = function(form) {
         }
 
         return '';
-    }
+    };
 
     this.isWpEditor = function( mergeTagIcon ) {
         var mergeTagIcon = jQuery( mergeTagIcon );
         return this.getClassProperty( mergeTagIcon, 'wp_editor' ) == true;
-    }
+    };
 
     this.init();
 
+};
+
+var FeedConditionObj = function( args ) {
+
+    this.strings = isSet( args.strings ) ? args.strings : {};
+    this.logicObject = args.logicObject;
+
+    this.init = function() {
+
+        var fcobj = this;
+
+        gform.addFilter( 'gform_conditional_object', 'FeedConditionConditionalObject' );
+        gform.addFilter( 'gform_conditional_logic_description', 'FeedConditionConditionalDescription' );
+
+        jQuery(document).ready(function(){
+            ToggleConditionalLogic( true, "feed_condition" );
+        });
+
+        jQuery('input#feed_condition_conditional_logic').parents('form').on('submit', function(){
+            jQuery('input#feed_condition_conditional_logic_object').val( JSON.stringify( fcobj.logicObject ) );
+        });
+
+    };
+
+    this.init();
+
+};
+
+function SimpleConditionObject( object, objectType ) {
+
+	if( objectType.indexOf('simple_condition') < 0 )
+		return object;
+
+	var objectName = objectType.substring(17) + "_object";
+
+	return window[objectName];
 }
+
+function FeedConditionConditionalObject( object, objectType ) {
+
+    if( objectType != 'feed_condition' )
+        return object;
+
+    return feedCondition.logicObject;
+}
+
+function FeedConditionConditionalDescription( description, descPieces, objectType, obj ) {
+
+    if( objectType != 'feed_condition' )
+        return description;
+
+    descPieces.actionType = descPieces.actionType.replace('<select', '<select style="display:none;"');
+    descPieces.objectDescription = feedCondition.strings.objectDescription;
+    var descPiecesArr = makeArray( descPieces );
+
+    return descPiecesArr.join(' ');
+}
+
+function makeArray( object ) {
+    var array = [];
+    for( i in object ) {
+        array.push( object[i] );
+    }
+    return array;
+}
+
+function isSet( $var ) {
+    return typeof $var != 'undefined';
+}
+
