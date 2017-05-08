@@ -8640,12 +8640,6 @@
 		"oAP": "\/wp-content\/plugins\/better-wp-security\/readme.txt",
 		"oF": 0
 		},
-	"\/wp-content\/plugins\/breadcrumb-navxt\/.gitignore": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/wp-content\/plugins\/breadcrumb-navxt\/.gitignore",
-		"oF": 0
-		},
 	"\/wp-content\/plugins\/breadcrumb-navxt\/breadcrumb-navxt.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -8766,12 +8760,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-content\/plugins\/breadcrumb-navxt\/languages\/breadcrumb-navxt.pot",
-		"oF": 0
-		},
-	"\/wp-content\/plugins\/breadcrumb-navxt\/phpunit.xml": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/wp-content\/plugins\/breadcrumb-navxt\/phpunit.xml",
 		"oF": 0
 		},
 	"\/wp-content\/plugins\/breadcrumb-navxt\/readme.txt": {
@@ -9660,6 +9648,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/wp-content\/plugins\/gravityforms\/css\/admin.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/admin.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/wp-content\/plugins\/gravityforms\/css\/browsers.css": {
 		"aP": 1,
 		"bl": 0,
@@ -9667,6 +9665,58 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/browsers-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/browsers.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/browsers.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/chosen-sprite.png": {
+		"ft": 32768,
+		"iS": 538,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/chosen-sprite.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/chosen-sprite@2x.png": {
+		"ft": 32768,
+		"iS": 872,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/chosen-sprite@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/chosen.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/chosen-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/chosen.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/chosen.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -9680,6 +9730,36 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/wp-content\/plugins\/gravityforms\/css\/datepicker.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/datepicker.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/font-awesome.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/font-awesome-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/font-awesome.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/font-awesome.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/wp-content\/plugins\/gravityforms\/css\/formreset.css": {
 		"aP": 1,
 		"bl": 0,
@@ -9687,6 +9767,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/formreset-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/formreset.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/formreset.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -9700,6 +9790,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/wp-content\/plugins\/gravityforms\/css\/forms.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/forms.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/wp-content\/plugins\/gravityforms\/css\/formsmain.css": {
 		"aP": 1,
 		"bl": 0,
@@ -9710,15 +9810,41 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/gravityforms\/css\/jquery-ui-1.7.2.custom.css": {
+	"\/wp-content\/plugins\/gravityforms\/css\/formsmain.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/jquery-ui-1.7.2.custom-min.css",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/formsmain.min-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/gravityfont.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/gravityfont-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/gravityfont.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/gravityfont.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/index.php",
+		"oF": 0
 		},
 	"\/wp-content\/plugins\/gravityforms\/css\/jquery-ui.custom.css": {
 		"aP": 1,
@@ -9727,6 +9853,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/jquery-ui.custom-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/jquery-ui.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/jquery-ui.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -9740,6 +9876,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/wp-content\/plugins\/gravityforms\/css\/preview.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/preview.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/wp-content\/plugins\/gravityforms\/css\/print.css": {
 		"aP": 1,
 		"bl": 0,
@@ -9747,6 +9893,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/print-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/print.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/print.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -9760,6 +9916,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/wp-content\/plugins\/gravityforms\/css\/readyclass.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/readyclass.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/wp-content\/plugins\/gravityforms\/css\/reset.css": {
 		"aP": 1,
 		"bl": 0,
@@ -9767,6 +9933,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/reset-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/reset.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/reset.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -9780,6 +9956,56 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/wp-content\/plugins\/gravityforms\/css\/rtl.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/rtl.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/shortcode-ui-editor-styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/shortcode-ui-editor-styles-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/shortcode-ui-editor-styles.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/shortcode-ui-editor-styles.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/shortcode-ui.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/shortcode-ui-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/shortcode-ui.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/shortcode-ui.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/wp-content\/plugins\/gravityforms\/css\/tooltip.css": {
 		"aP": 1,
 		"bl": 0,
@@ -9787,6 +10013,26 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/tooltip-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/tooltip.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/tooltip.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/css\/ui.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/css\/ui.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -9824,6 +10070,80 @@
 		"oAP": "\/wp-content\/plugins\/gravityforms\/export.php",
 		"oF": 0
 		},
+	"\/wp-content\/plugins\/gravityforms\/fonts\/fontawesome-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/fonts\/fontawesome-webfont.eot",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/fonts\/fontawesome-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/fonts\/fontawesome-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/fonts\/fontawesome-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/fonts\/fontawesome-webfont.ttf",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/fonts\/fontawesome-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/fonts\/fontawesome-webfont.woff",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/fonts\/fontawesome-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/fonts\/fontawesome-webfont.woff2",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/fonts\/FontAwesome.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/fonts\/FontAwesome.otf",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/fonts\/gravityfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/fonts\/gravityfont.eot",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/fonts\/gravityfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/fonts\/gravityfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/fonts\/gravityfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/fonts\/gravityfont.ttf",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/fonts\/gravityfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/fonts\/gravityfont.woff",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/fonts\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/fonts\/index.php",
+		"oF": 0
+		},
 	"\/wp-content\/plugins\/gravityforms\/form_detail.php": {
 		"ft": 8192,
 		"oA": 0,
@@ -9852,6 +10172,12 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/forms_model.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/gpl-3.0.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/gpl-3.0.txt",
 		"oF": 0
 		},
 	"\/wp-content\/plugins\/gravityforms\/gravityforms.php": {
@@ -9899,44 +10225,38 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/wp-content\/plugins\/gravityforms\/images\/arrow-handle.png": {
+	"\/wp-content\/plugins\/gravityforms\/images\/arrow-right.png": {
 		"ft": 32768,
-		"iS": 1110,
+		"iS": 679,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/arrow-handle.png",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/arrow-right.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/wp-content\/plugins\/gravityforms\/images\/arrow-right.jpg": {
-		"ft": 16384,
-		"iS": 1317,
+	"\/wp-content\/plugins\/gravityforms\/images\/arrow-rightleft.png": {
+		"ft": 32768,
+		"iS": 1134,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/arrow-right.jpg",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/arrow-rightleft.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
-	"\/wp-content\/plugins\/gravityforms\/images\/arrow-rightleft.jpg": {
-		"ft": 16384,
-		"iS": 1640,
+	"\/wp-content\/plugins\/gravityforms\/images\/blankspace.png": {
+		"ft": 32768,
+		"iS": 105,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/arrow-rightleft.jpg",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/blankspace.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/blank.gif": {
-		"ft": 4194304,
-		"iS": 43,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/blank.gif",
-		"oF": 0,
-		"opt": 0
 		},
 	"\/wp-content\/plugins\/gravityforms\/images\/calendar.png": {
 		"ft": 32768,
@@ -9949,21 +10269,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/wp-content\/plugins\/gravityforms\/images\/captcha_blackglass.jpg": {
+	"\/wp-content\/plugins\/gravityforms\/images\/captcha_dark.jpg": {
 		"ft": 16384,
-		"iS": 12979,
+		"iS": 11093,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/captcha_blackglass.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/captcha_clean.jpg": {
-		"ft": 16384,
-		"iS": 12650,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/captcha_clean.jpg",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/captcha_dark.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -9980,6 +10290,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/wp-content\/plugins\/gravityforms\/images\/captcha_light.jpg": {
+		"ft": 16384,
+		"iS": 8085,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/captcha_light.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/wp-content\/plugins\/gravityforms\/images\/captcha_medium.png": {
 		"ft": 32768,
 		"iS": 1026,
@@ -9989,16 +10309,6 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/captcha_red.jpg": {
-		"ft": 16384,
-		"iS": 12880,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/captcha_red.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
 		"q": 100
 		},
 	"\/wp-content\/plugins\/gravityforms\/images\/captcha_small.png": {
@@ -10012,14 +10322,15 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/wp-content\/plugins\/gravityforms\/images\/captcha_white.jpg": {
-		"ft": 16384,
-		"iS": 12470,
+	"\/wp-content\/plugins\/gravityforms\/images\/chosen-sprite-2x.png": {
+		"ft": 32768,
+		"iS": 872,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/captcha_white.jpg",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/chosen-sprite-2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/wp-content\/plugins\/gravityforms\/images\/chosen-sprite.png": {
@@ -10033,11 +10344,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/wp-content\/plugins\/gravityforms\/images\/close.png": {
+	"\/wp-content\/plugins\/gravityforms\/images\/chosen-sprite@2x.png": {
 		"ft": 32768,
-		"iS": 712,
+		"iS": 872,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/close.png",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/chosen-sprite@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -10055,17 +10366,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/wp-content\/plugins\/gravityforms\/images\/cross.png": {
-		"ft": 32768,
-		"iS": 655,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/cross.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/wp-content\/plugins\/gravityforms\/images\/datepicker\/arrow.png": {
 		"ft": 32768,
 		"iS": 316,
@@ -10076,6 +10376,12 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/wp-content\/plugins\/gravityforms\/images\/datepicker\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/datepicker\/index.php",
+		"oF": 0
 		},
 	"\/wp-content\/plugins\/gravityforms\/images\/datepicker\/ui-icons_222222_256x240.png": {
 		"ft": 32768,
@@ -10120,22 +10426,6 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/datepicker_arrow_left.gif": {
-		"ft": 4194304,
-		"iS": 53,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/datepicker_arrow_left.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/datepicker_arrow_right.gif": {
-		"ft": 4194304,
-		"iS": 53,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/datepicker_arrow_right.gif",
-		"oF": 0,
-		"opt": 0
 		},
 	"\/wp-content\/plugins\/gravityforms\/images\/delete.png": {
 		"ft": 32768,
@@ -10316,44 +10606,17 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/wp-content\/plugins\/gravityforms\/images\/doctypes\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/doctypes\/index.php",
+		"oF": 0
+		},
 	"\/wp-content\/plugins\/gravityforms\/images\/download.png": {
 		"ft": 32768,
 		"iS": 1239,
 		"oA": 0,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/download.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/duplicate.png": {
-		"ft": 32768,
-		"iS": 1502,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/duplicate.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/edit.png": {
-		"ft": 32768,
-		"iS": 730,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/edit.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/error.png": {
-		"ft": 32768,
-		"iS": 666,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/error.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -10371,50 +10634,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/wp-content\/plugins\/gravityforms\/images\/expand_title.png": {
-		"ft": 32768,
-		"iS": 822,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/expand_title.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/form-button.png": {
-		"ft": 32768,
-		"iS": 182,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/form-button.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/form_options.png": {
-		"ft": 32768,
-		"iS": 439,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/form_options.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf-32-iconsprite.png": {
-		"ft": 32768,
-		"iS": 5750,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-32-iconsprite.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/wp-content\/plugins\/gravityforms\/images\/gf-creditcard-icons.png": {
 		"ft": 32768,
 		"iS": 75752,
@@ -10424,16 +10643,6 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf-entry-paging-sprite.jpg": {
-		"ft": 16384,
-		"iS": 2308,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-entry-paging-sprite.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
 		"q": 100
 		},
 	"\/wp-content\/plugins\/gravityforms\/images\/gf-expand-title-bg-rtl.png": {
@@ -10447,43 +10656,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf-expand-title-bg.png": {
-		"ft": 32768,
-		"iS": 822,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-expand-title-bg.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/wp-content\/plugins\/gravityforms\/images\/gf-fieldsettings-header.jpg": {
 		"ft": 16384,
 		"iS": 6420,
 		"oA": 0,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-fieldsettings-header.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf-hovergrad-bg.png": {
-		"ft": 32768,
-		"iS": 208,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-hovergrad-bg.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf-html-admin-placeholder.jpg": {
-		"ft": 16384,
-		"iS": 12795,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-html-admin-placeholder.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -10554,406 +10731,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf-percentbar-bg.png": {
-		"ft": 32768,
-		"iS": 334,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-percentbar-bg.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf-percentbar-blue.png": {
-		"ft": 32768,
-		"iS": 492,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-percentbar-blue.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf-percentbar-custom.png": {
-		"ft": 32768,
-		"iS": 547,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-percentbar-custom.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf-percentbar-gray.png": {
-		"ft": 32768,
-		"iS": 375,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-percentbar-gray.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf-percentbar-green.png": {
-		"ft": 32768,
-		"iS": 513,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-percentbar-green.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf-percentbar-orange.png": {
-		"ft": 32768,
-		"iS": 483,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-percentbar-orange.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf-percentbar-red.png": {
-		"ft": 32768,
-		"iS": 452,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-percentbar-red.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf-percentbar-yellow.png": {
-		"ft": 32768,
-		"iS": 477,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-percentbar-yellow.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf-tab-container-bg.png": {
-		"ft": 32768,
-		"iS": 957,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-tab-container-bg.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf-taboff-bg.png": {
-		"ft": 32768,
-		"iS": 187,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-taboff-bg.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf-toolbar-bg.jpg": {
-		"ft": 16384,
-		"iS": 187,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-toolbar-bg.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf-toolbar-iconsprite.png": {
-		"ft": 32768,
-		"iS": 3407,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf-toolbar-iconsprite.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf_creditcard_icons.png": {
-		"ft": 32768,
-		"iS": 76461,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf_creditcard_icons.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf_entry_paging_sprite.jpg": {
-		"ft": 16384,
-		"iS": 2308,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf_entry_paging_sprite.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf_fieldsettings_header.jpg": {
-		"ft": 16384,
-		"iS": 559,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf_fieldsettings_header.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf_formsettings_header.jpg": {
-		"ft": 16384,
-		"iS": 3006,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf_formsettings_header.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf_html_admin_placeholder.jpg": {
-		"ft": 16384,
-		"iS": 12795,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf_html_admin_placeholder.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf_media_button_bg.jpg": {
-		"ft": 16384,
-		"iS": 551,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf_media_button_bg.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf_new_option_bg 2.png": {
-		"ft": 32768,
-		"iS": 181,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf_new_option_bg 2.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf_new_option_bg.png": {
-		"ft": 32768,
-		"iS": 181,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf_new_option_bg.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf_pagebreak_end.png": {
-		"ft": 32768,
-		"iS": 2770,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf_pagebreak_end.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf_pagebreak_first.png": {
-		"ft": 32768,
-		"iS": 2957,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf_pagebreak_first.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf_pagebreak_inline.png": {
-		"ft": 32768,
-		"iS": 2970,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf_pagebreak_inline.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf_taboff_bg.png": {
-		"ft": 32768,
-		"iS": 187,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf_taboff_bg.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gf_toolbar_bg.jpg": {
-		"ft": 16384,
-		"iS": 187,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gf_toolbar_bg.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gravity-admin-icon.png": {
-		"ft": 32768,
-		"iS": 350,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gravity-admin-icon.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gravity-edit-icon-32.png": {
-		"ft": 32768,
-		"iS": 2052,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gravity-edit-icon-32.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gravity-entry-icon-32.png": {
-		"ft": 32768,
-		"iS": 2009,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gravity-entry-icon-32.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gravity-export-icon-32.png": {
-		"ft": 32768,
-		"iS": 1976,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gravity-export-icon-32.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gravity-help-icon-32.png": {
-		"ft": 32768,
-		"iS": 2250,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gravity-help-icon-32.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gravity-import-icon-32.png": {
-		"ft": 32768,
-		"iS": 1987,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gravity-import-icon-32.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gravity-logo.png": {
-		"ft": 32768,
-		"iS": 5684,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gravity-logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gravity-notification-icon-32.png": {
-		"ft": 32768,
-		"iS": 2089,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gravity-notification-icon-32.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gravity-settings-icon-32.png": {
-		"ft": 32768,
-		"iS": 2011,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gravity-settings-icon-32.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gravity-title-icon-32.png": {
-		"ft": 32768,
-		"iS": 775,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gravity-title-icon-32.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gravity-update-icon-32.png": {
-		"ft": 32768,
-		"iS": 2314,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gravity-update-icon-32.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gravity_logo.png": {
-		"ft": 32768,
-		"iS": 5684,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gravity_logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/wp-content\/plugins\/gravityforms\/images\/gravityforms-business-upgrade.png": {
 		"ft": 32768,
 		"iS": 10549,
@@ -10976,132 +10753,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gravityforms_business_upgrade.png": {
-		"ft": 32768,
-		"iS": 15018,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gravityforms_business_upgrade.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/gravityforms_developer_upgrade.png": {
-		"ft": 32768,
-		"iS": 16650,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/gravityforms_developer_upgrade.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/hovergrad.png": {
-		"ft": 32768,
-		"iS": 208,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/hovergrad.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/icon-close.png": {
-		"ft": 32768,
-		"iS": 1216,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/icon-close.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/icon-delete.png": {
-		"ft": 32768,
-		"iS": 1261,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/icon-delete.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/wp-content\/plugins\/gravityforms\/images\/icon-drop-list.png": {
 		"ft": 32768,
 		"iS": 1079,
 		"oA": 0,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/icon-drop-list.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/icon-duplicate.png": {
-		"ft": 32768,
-		"iS": 1285,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/icon-duplicate.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/icon-edit-gray.png": {
-		"ft": 32768,
-		"iS": 1244,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/icon-edit-gray.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/icon-edit.png": {
-		"ft": 32768,
-		"iS": 1348,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/icon-edit.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/icon-question.png": {
-		"ft": 32768,
-		"iS": 1282,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/icon-question.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/icon-question2.png": {
-		"ft": 32768,
-		"iS": 735,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/icon-question2.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/icon-remove.png": {
-		"ft": 32768,
-		"iS": 1300,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/icon-remove.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -11119,101 +10775,39 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/wp-content\/plugins\/gravityforms\/images\/loading.gif": {
+	"\/wp-content\/plugins\/gravityforms\/images\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/images\/list-add.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/list-add.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/images\/list-remove.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/list-remove.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/images\/preview_grid.gif": {
 		"ft": 4194304,
-		"iS": 1849,
+		"iS": 61216,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/loading.gif",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/preview_grid.gif",
 		"oF": 0,
 		"opt": 0
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/percentbar_bg.png": {
-		"ft": 32768,
-		"iS": 334,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/percentbar_bg.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/percentbar_blue.png": {
-		"ft": 32768,
-		"iS": 492,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/percentbar_blue.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/percentbar_custom.png": {
-		"ft": 32768,
-		"iS": 547,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/percentbar_custom.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/percentbar_gray.png": {
-		"ft": 32768,
-		"iS": 375,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/percentbar_gray.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/percentbar_green.png": {
-		"ft": 32768,
-		"iS": 513,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/percentbar_green.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/percentbar_orange.png": {
-		"ft": 32768,
-		"iS": 483,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/percentbar_orange.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/percentbar_red.png": {
-		"ft": 32768,
-		"iS": 452,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/percentbar_red.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/percentbar_yellow.png": {
-		"ft": 32768,
-		"iS": 477,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/percentbar_yellow.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"\/wp-content\/plugins\/gravityforms\/images\/prodlist-last.png": {
 		"ft": 32768,
@@ -11259,13 +10853,16 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/wp-content\/plugins\/gravityforms\/images\/screen-options-left.gif": {
-		"ft": 4194304,
-		"iS": 640,
+	"\/wp-content\/plugins\/gravityforms\/images\/rich-text-editor.png": {
+		"ft": 32768,
+		"iS": 3438,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/screen-options-left.gif",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/rich-text-editor.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/wp-content\/plugins\/gravityforms\/images\/spinner.gif": {
 		"ft": 4194304,
@@ -11297,83 +10894,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/wp-content\/plugins\/gravityforms\/images\/stop.png": {
-		"ft": 32768,
-		"iS": 700,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/stop.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/stopbanner.png": {
-		"ft": 32768,
-		"iS": 17891,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/stopbanner.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/tick.png": {
-		"ft": 32768,
-		"iS": 537,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/tick.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/tiny-arrow-down.png": {
-		"ft": 32768,
-		"iS": 947,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/tiny-arrow-down.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/top-highlight.png": {
-		"ft": 32768,
-		"iS": 110,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/top-highlight.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/top_highlight.png": {
-		"ft": 32768,
-		"iS": 110,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/top_highlight.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/wp-content\/plugins\/gravityforms\/images\/trash.png": {
-		"ft": 32768,
-		"iS": 1332,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/trash.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/wp-content\/plugins\/gravityforms\/images\/webkit-enhanced-select.png": {
 		"ft": 32768,
 		"iS": 2885,
@@ -11385,13 +10905,952 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/wp-content\/plugins\/gravityforms\/images\/wp-logo.gif": {
+	"\/wp-content\/plugins\/gravityforms\/images\/xit.gif": {
 		"ft": 4194304,
-		"iS": 1096,
+		"iS": 181,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/wp-logo.gif",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/images\/xit.gif",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/class-gf-addon-locking.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/class-gf-addon-locking.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/class-gf-addon.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/class-gf-addon.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/class-gf-auto-upgrade.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/class-gf-auto-upgrade.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/class-gf-feed-addon.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/class-gf-feed-addon.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/class-gf-feed-processor.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/class-gf-feed-processor.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/class-gf-payment-addon.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/class-gf-payment-addon.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/class-gf-results.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/class-gf-results.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/css\/gaddon_form_settings.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/css\/gaddon_form_settings-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/css\/gaddon_form_settings.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/css\/gaddon_form_settings.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/css\/gaddon_results.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/css\/gaddon_results-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/css\/gaddon_results.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/css\/gaddon_results.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/css\/gaddon_settings.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/css\/gaddon_settings-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/css\/gaddon_settings.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/css\/gaddon_settings.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/css\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/css\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/images\/field-map-buttons.png": {
+		"ft": 32768,
+		"iS": 1563,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/images\/field-map-buttons.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/images\/field-map-reset.png": {
+		"ft": 32768,
+		"iS": 1869,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/images\/field-map-reset.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/gaddon_feedorder.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/min\/gaddon_feedorder-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/gaddon_feedorder.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/min\/gaddon_feedorder.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/gaddon_fieldmap.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/min\/gaddon_fieldmap-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/gaddon_fieldmap.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/min\/gaddon_fieldmap.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/gaddon_genericmap.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/min\/gaddon_genericmap-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/gaddon_genericmap.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/min\/gaddon_genericmap.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/gaddon_payment.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/min\/gaddon_payment-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/gaddon_payment.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/min\/gaddon_payment.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/gaddon_results.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/min\/gaddon_results-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/gaddon_results.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/min\/gaddon_results.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/gaddon_selectcustom.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/min\/gaddon_selectcustom-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/gaddon_selectcustom.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/min\/gaddon_selectcustom.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/gaddon_token.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/min\/gaddon_token-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/gaddon_token.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/min\/gaddon_token.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/repeater.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/min\/repeater-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/repeater.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/addon\/js\/min\/repeater.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/api.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/api.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/class-gf-download.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/class-gf-download.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/class-gf-upgrade.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/class-gf-upgrade.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/class-gravity-api.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/class-gravity-api.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-address.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-address.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-calculation.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-calculation.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-captcha.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-captcha.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-checkbox.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-checkbox.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-creditcard.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-creditcard.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-date.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-date.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-donation.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-donation.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-email.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-email.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-fileupload.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-fileupload.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-hidden.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-hidden.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-hiddenproduct.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-hiddenproduct.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-html.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-html.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-list.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-list.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-multiselect.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-multiselect.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-name.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-name.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-number.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-number.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-option.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-option.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-page.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-password.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-password.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-phone.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-phone.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-post-category.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-post-category.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-post-content.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-post-content.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-post-custom-field.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-post-custom-field.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-post-excerpt.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-post-excerpt.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-post-image.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-post-image.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-post-tags.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-post-tags.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-post-title.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-post-title.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-price.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-price.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-product.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-product.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-quantity.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-quantity.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-radio.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-radio.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-section.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-section.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-select.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-select.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-shipping.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-shipping.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-singleproduct.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-singleproduct.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-singleshipping.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-singleshipping.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-text.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-text.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-textarea.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-textarea.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-time.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-time.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-total.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-total.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-website.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field-website.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-field.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-fields.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/class-gf-fields.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/fields\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/fields\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/libraries\/gf-background-process.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/libraries\/gf-background-process.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/libraries\/wp-async-request.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/libraries\/wp-async-request.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/locking\/class-gf-locking.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/locking\/class-gf-locking.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/locking\/css\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/locking\/css\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/locking\/css\/locking-list.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/locking\/css\/locking-list-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/locking\/css\/locking-list.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/locking\/css\/locking-list.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/locking\/css\/locking.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/locking\/css\/locking-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/locking\/css\/locking.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/locking\/css\/locking.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/locking\/images\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/locking\/images\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/locking\/images\/lock.png": {
+		"ft": 32768,
+		"iS": 338,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/locking\/images\/lock.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/locking\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/locking\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/locking\/js\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/locking\/js\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/locking\/js\/locking-list.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/locking\/js\/min\/locking-list-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/locking\/js\/locking-list.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/locking\/js\/min\/locking-list.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/locking\/js\/locking-view.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/locking\/js\/min\/locking-view-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/locking\/js\/locking-view.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/locking\/js\/min\/locking-view.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/locking\/js\/locking.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/locking\/js\/min\/locking-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/locking\/js\/locking.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/locking\/js\/min\/locking.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/locking\/locking.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/locking\/locking.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/logging\/includes\/KLogger.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/logging\/includes\/KLogger.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/logging\/logging.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/logging\/logging.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/phpqrcode\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/phpqrcode\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/phpqrcode\/LICENSE": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/phpqrcode\/LICENSE",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/phpqrcode\/phpqrcode.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/phpqrcode\/phpqrcode.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/system-status\/class-gf-system-report.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/system-status\/class-gf-system-report.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/system-status\/class-gf-system-status.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/system-status\/class-gf-system-status.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/system-status\/class-gf-update.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/system-status\/class-gf-update.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/system-status\/js\/clipboard.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/system-status\/js\/min\/clipboard.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/templates\/edit-shortcode-form.tpl.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/templates\/edit-shortcode-form.tpl.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/upload.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/upload.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/webapi\/css\/gfwebapi_settings.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/webapi\/css\/gfwebapi_settings-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/webapi\/css\/gfwebapi_settings.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/webapi\/css\/gfwebapi_settings.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/webapi\/css\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/webapi\/css\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/webapi\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/webapi\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/webapi\/js\/enc-base64-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/webapi\/js\/min\/enc-base64-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/webapi\/js\/enc-base64-min.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/webapi\/js\/min\/enc-base64-min.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/webapi\/js\/gfwebapi_settings.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/webapi\/js\/min\/gfwebapi_settings-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/webapi\/js\/gfwebapi_settings.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/webapi\/js\/min\/gfwebapi_settings.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/webapi\/js\/hmac-sha1.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/webapi\/js\/min\/hmac-sha1.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/webapi\/js\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/webapi\/js\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/webapi\/webapi.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/webapi\/webapi.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/wizard\/class-gf-installation-wizard.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/wizard\/class-gf-installation-wizard.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/wizard\/class-gf-upgrade-wizard.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/wizard\/class-gf-upgrade-wizard.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/wizard\/steps\/class-gf-installation-wizard-step-background-updates.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/wizard\/steps\/class-gf-installation-wizard-step-background-updates.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/wizard\/steps\/class-gf-installation-wizard-step-complete.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/wizard\/steps\/class-gf-installation-wizard-step-complete.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/wizard\/steps\/class-gf-installation-wizard-step-license-key.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/wizard\/steps\/class-gf-installation-wizard-step-license-key.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/wizard\/steps\/class-gf-installation-wizard-step-settings.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/wizard\/steps\/class-gf-installation-wizard-step-settings.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/includes\/wizard\/steps\/class-gf-installation-wizard-step.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/includes\/wizard\/steps\/class-gf-installation-wizard-step.php",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/index.php",
+		"oF": 0
 		},
 	"\/wp-content\/plugins\/gravityforms\/js.php": {
 		"ft": 8192,
@@ -11417,11 +11876,11 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/gravityforms\/js\/confirmation_editor.js": {
+	"\/wp-content\/plugins\/gravityforms\/js\/conditional_logic.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/confirmation_editor-min.js",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/conditional_logic.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -11435,11 +11894,29 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/wp-content\/plugins\/gravityforms\/js\/datepicker.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/datepicker.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/wp-content\/plugins\/gravityforms\/js\/floatmenu_init.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/floatmenu_init-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/js\/floatmenu_init.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/floatmenu_init.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -11453,11 +11930,29 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/wp-content\/plugins\/gravityforms\/js\/form_admin.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/form_admin.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/wp-content\/plugins\/gravityforms\/js\/form_editor.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/form_editor-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/js\/form_editor.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/form_editor.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -11471,6 +11966,33 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/wp-content\/plugins\/gravityforms\/js\/forms.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/forms.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/js\/gf_field_filter.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/gf_field_filter-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/js\/gf_field_filter.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/gf_field_filter.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/wp-content\/plugins\/gravityforms\/js\/gravityforms.js": {
 		"ft": 64,
 		"mi": 1,
@@ -11480,23 +12002,20 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/gravityforms\/js\/jquery-ui\/ui.datepicker.js": {
+	"\/wp-content\/plugins\/gravityforms\/js\/gravityforms.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/jquery-ui\/min\/ui.datepicker-min.js",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/gravityforms.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/gravityforms\/js\/jquery.dimensions.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/jquery.dimensions-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
+	"\/wp-content\/plugins\/gravityforms\/js\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/index.php",
+		"oF": 0
 		},
 	"\/wp-content\/plugins\/gravityforms\/js\/jquery.json-1.3.js": {
 		"ft": 64,
@@ -11507,38 +12026,47 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/gravityforms\/js\/jquery.maskedinput-1.3.min.js": {
+	"\/wp-content\/plugins\/gravityforms\/js\/jquery.json-1.3.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/jquery.maskedinput-1.3.min-min.js",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/jquery.json-1.3.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/gravityforms\/js\/jquery.placeholder.1.2.min.js": {
+	"\/wp-content\/plugins\/gravityforms\/js\/jquery.json.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/jquery.placeholder.1.2.min-min.js",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/jquery.json-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/gravityforms\/js\/jquery.qtip-1.0.0-rc2.min.js": {
+	"\/wp-content\/plugins\/gravityforms\/js\/jquery.json.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/jquery.qtip-1.0.0-rc2.min-min.js",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/jquery.json.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/gravityforms\/js\/jquery.simplemodal-1.3.min.js": {
+	"\/wp-content\/plugins\/gravityforms\/js\/jquery.maskedinput-1.3.1.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/jquery.simplemodal-1.3.min-min.js",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/jquery.maskedinput-1.3.1.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/js\/jquery.maskedinput.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/jquery.maskedinput.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -11552,6 +12080,15 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/wp-content\/plugins\/gravityforms\/js\/jquery.textareaCounter.plugin.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/jquery.textareaCounter.plugin.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/wp-content\/plugins\/gravityforms\/js\/menu.js": {
 		"ft": 64,
 		"mi": 1,
@@ -11561,33 +12098,89 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/gravityforms\/js\/qtip_init.js": {
+	"\/wp-content\/plugins\/gravityforms\/js\/menu.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/qtip_init-min.js",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/menu.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/gravityforms\/js\/thickbox.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/thickbox-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/wp-content\/plugins\/gravityforms\/js\/thickbox.js": {
+	"\/wp-content\/plugins\/gravityforms\/js\/placeholders.jquery.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/thickbox-min.js",
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/placeholders.jquery.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/js\/shortcode-ui.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/shortcode-ui-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/js\/shortcode-ui.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/shortcode-ui.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/js\/tooltip_init.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/tooltip_init-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/js\/tooltip_init.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/js\/min\/tooltip_init.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-af.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-af.mo",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-ar.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-ar.mo",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-bg_BG.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-bg_BG.mo",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-bn_BD.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-bn_BD.mo",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-ca.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-ca.mo",
+		"oF": 0
 		},
 	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-cs_CZ.mo": {
 		"ft": 8192,
@@ -11595,10 +12188,52 @@
 		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-cs_CZ.mo",
 		"oF": 0
 		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-da_DK.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-da_DK.mo",
+		"oF": 0
+		},
 	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-de_DE.mo": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-de_DE.mo",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-de_DE_formal.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-de_DE_formal.mo",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-en.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-en.mo",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-en_AU.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-en_AU.mo",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-en_GB.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-en_GB.mo",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-en_NZ.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-en_NZ.mo",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-en_ZA.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-en_ZA.mo",
 		"oF": 0
 		},
 	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-es_ES.mo": {
@@ -11613,16 +12248,16 @@
 		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-fi.mo",
 		"oF": 0
 		},
-	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-fi_FI.mo": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-fi_FI.mo",
-		"oF": 0
-		},
 	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-fr_FR.mo": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-fr_FR.mo",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-he_IL.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-he_IL.mo",
 		"oF": 0
 		},
 	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-hu_HU.mo": {
@@ -11637,10 +12272,28 @@
 		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-it_IT.mo",
 		"oF": 0
 		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-ja.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-ja.mo",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-ka_GE.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-ka_GE.mo",
+		"oF": 0
+		},
 	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-nb_NO.mo": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-nb_NO.mo",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-nl_be.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-nl_be.mo",
 		"oF": 0
 		},
 	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-nl_NL.mo": {
@@ -11655,16 +12308,52 @@
 		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-pt_BR.mo",
 		"oF": 0
 		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-pt_PT.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-pt_PT.mo",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-ro_RO.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-ro_RO.mo",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-ru_RU.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-ru_RU.mo",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-sk_SK.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-sk_SK.mo",
+		"oF": 0
+		},
 	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-sv_SE.mo": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-sv_SE.mo",
 		"oF": 0
 		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-zh_CN.mo": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms-zh_CN.mo",
+		"oF": 0
+		},
 	"\/wp-content\/plugins\/gravityforms\/languages\/gravityforms.pot": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/gravityforms.pot",
+		"oF": 0
+		},
+	"\/wp-content\/plugins\/gravityforms\/languages\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/plugins\/gravityforms\/languages\/index.php",
 		"oF": 0
 		},
 	"\/wp-content\/plugins\/gravityforms\/notification.php": {
@@ -11685,12 +12374,6 @@
 		"oAP": "\/wp-content\/plugins\/gravityforms\/print-entry.php",
 		"oF": 0
 		},
-	"\/wp-content\/plugins\/gravityforms\/recaptchalib.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/recaptchalib.php",
-		"oF": 0
-		},
 	"\/wp-content\/plugins\/gravityforms\/select_columns.php": {
 		"ft": 8192,
 		"oA": 0,
@@ -11707,12 +12390,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/wp-content\/plugins\/gravityforms\/tooltips.php",
-		"oF": 0
-		},
-	"\/wp-content\/plugins\/gravityforms\/update.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/wp-content\/plugins\/gravityforms\/update.php",
 		"oF": 0
 		},
 	"\/wp-content\/plugins\/gravityforms\/widget.php": {
@@ -14707,153 +15384,153 @@
 		"oAP": "\/wp-content\/plugins\/wordpress-seo\/admin\/views\/user-profile.php",
 		"oF": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/admin-global-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/admin-global-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/admin-global-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/admin-global-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/adminbar-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/adminbar-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/adminbar-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/adminbar-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/alerts-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/alerts-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/alerts-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/alerts-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dashboard-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dashboard-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dashboard-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dashboard-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/admin-global-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/admin-global-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/admin-global-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/admin-global-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/adminbar-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/adminbar-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/adminbar-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/adminbar-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/alerts-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/alerts-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/alerts-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/alerts-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/dashboard-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/dashboard-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/dashboard-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/dashboard-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/edit-page-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/edit-page-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/edit-page-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/edit-page-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/featured-image-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/featured-image-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/featured-image-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/featured-image-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/help-center-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/help-center-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/help-center-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/help-center-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/inside-editor-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/inside-editor-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/inside-editor-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/inside-editor-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/kb-search-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/kb-search-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/kb-search-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/kb-search-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/metabox-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/metabox-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/metabox-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/metabox-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/metabox-primary-category-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/metabox-primary-category-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/metabox-primary-category-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/metabox-primary-category-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -14867,173 +15544,173 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/snippet-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/snippet-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/snippet-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/snippet-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/toggle-switch-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/toggle-switch-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/toggle-switch-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/toggle-switch-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/wpseo-dismissible-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/wpseo-dismissible-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/wpseo-dismissible-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/wpseo-dismissible-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/yoast-components-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/yoast-components-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/yoast-components-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/yoast-components-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/yoast-extensions-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/yoast-extensions-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/yoast-extensions-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/yoast-extensions-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/yst_plugin_tools-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/yst_plugin_tools-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/yst_plugin_tools-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/yst_plugin_tools-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/yst_seo_score-460-rtl.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/dist\/yst_seo_score-470-rtl.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/yst_seo_score-460-rtl.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/dist\/yst_seo_score-470-rtl.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/edit-page-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/edit-page-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/edit-page-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/edit-page-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/featured-image-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/featured-image-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/featured-image-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/featured-image-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/help-center-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/help-center-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/help-center-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/help-center-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/inside-editor-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/inside-editor-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/inside-editor-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/inside-editor-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/kb-search-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/kb-search-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/kb-search-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/kb-search-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/metabox-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/metabox-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/metabox-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/metabox-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/metabox-primary-category-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/metabox-primary-category-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/metabox-primary-category-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/metabox-primary-category-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/snippet-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/snippet-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/snippet-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/snippet-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/toggle-switch-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/toggle-switch-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/toggle-switch-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/toggle-switch-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/wpseo-dismissible-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/wpseo-dismissible-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/wpseo-dismissible-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/wpseo-dismissible-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -15043,43 +15720,43 @@
 		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/xml-sitemap-xsl.php",
 		"oF": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/yoast-components-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/yoast-components-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/yoast-components-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/yoast-components-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/yoast-extensions-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/yoast-extensions-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/yoast-extensions-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/yoast-extensions-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/yst_plugin_tools-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/yst_plugin_tools-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/yst_plugin_tools-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/yst_plugin_tools-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/css\/yst_seo_score-460.min.css": {
+	"\/wp-content\/plugins\/wordpress-seo\/css\/yst_seo_score-470.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/yst_seo_score-460.min-min.css",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/css\/yst_seo_score-470.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -15705,11 +16382,11 @@
 		"oAP": "\/wp-content\/plugins\/wordpress-seo\/index.php",
 		"oF": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/configuration-wizard-460.min.js": {
+	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/configuration-wizard-470.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/configuration-wizard-460.min-min.js",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/configuration-wizard-470.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -16164,128 +16841,128 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-admin-460.min.js": {
+	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-admin-470.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-admin-460.min-min.js",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-admin-470.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-admin-global-460.min.js": {
+	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-admin-global-470.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-admin-global-460.min-min.js",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-admin-global-470.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-admin-gsc-460.min.js": {
+	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-admin-gsc-470.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-admin-gsc-460.min-min.js",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-admin-gsc-470.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-admin-media-460.min.js": {
+	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-admin-media-470.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-admin-media-460.min-min.js",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-admin-media-470.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-bulk-editor-460.min.js": {
+	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-bulk-editor-470.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-bulk-editor-460.min-min.js",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-bulk-editor-470.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-dismissible-460.min.js": {
+	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-dismissible-470.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-dismissible-460.min-min.js",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-dismissible-470.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-featured-image-460.min.js": {
+	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-featured-image-470.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-featured-image-460.min-min.js",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-featured-image-470.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-metabox-460.min.js": {
+	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-metabox-470.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-metabox-460.min-min.js",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-metabox-470.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-metabox-category-460.min.js": {
+	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-metabox-category-470.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-metabox-category-460.min-min.js",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-metabox-category-470.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-post-scraper-460.min.js": {
+	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-post-scraper-470.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-post-scraper-460.min-min.js",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-post-scraper-470.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-recalculate-460.min.js": {
+	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-recalculate-470.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-recalculate-460.min-min.js",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-recalculate-470.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-replacevar-plugin-460.min.js": {
+	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-replacevar-plugin-470.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-replacevar-plugin-460.min-min.js",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-replacevar-plugin-470.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-shortcode-plugin-460.min.js": {
+	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-shortcode-plugin-470.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-shortcode-plugin-460.min-min.js",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-shortcode-plugin-470.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-term-scraper-460.min.js": {
+	"\/wp-content\/plugins\/wordpress-seo\/js\/dist\/wp-seo-term-scraper-470.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-term-scraper-460.min-min.js",
+		"oAP": "\/wp-content\/plugins\/wordpress-seo\/js\/dist\/min\/wp-seo-term-scraper-470.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0

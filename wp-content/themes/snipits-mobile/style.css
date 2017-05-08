@@ -1649,3 +1649,7 @@ a.newsfeed_link {
 .mypostedin a:hover {
 	text-decoration: underline;
 }
+
+
+
+span.publication_author{font-style:italic;display:block;margin-top:13px}

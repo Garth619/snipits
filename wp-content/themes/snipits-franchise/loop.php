@@ -141,6 +141,12 @@
 												    	
 					<a class="newsfeed_link" href="<?php the_field('pdf');?>" target="_blank"><?php the_title(); ?></a>
 					
+					<?php if(get_field('mypublication')):?>
+												    		
+												    			<span class="publication_author"><?php the_field('mypublication');?></span>
+												    		
+												    		<?php endif;?>
+					
 					
 					<?php if(get_field('pdf_excerpt')):?>
 												    			
@@ -164,6 +170,8 @@
 												    		
 												    	
 				<a class="newsfeed_link" href="<?php the_field('outside_link');?>" target="_blank"><?php the_title(); ?></a>
+				
+				
 												    	
 												    	
 			<?php endif; ?>
@@ -172,6 +180,8 @@
 												    	
 												    		
 				<a class="newsfeed_link" href="<?php the_permalink();?>"><?php the_title(); ?></a>
+				
+					<span class="publication_author">by Snip-its</span>
 												    			
 												    			
 					<?php if(get_field('blog_excerpt')):?>

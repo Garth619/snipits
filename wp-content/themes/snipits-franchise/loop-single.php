@@ -20,14 +20,18 @@
 				
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<h2 style="margin-top:20px;"><?php the_title(); ?></h2>
+					<h2 style="margin-top:20px;margin-bottom:0;"><?php the_title(); ?></h2>
+					
+						
 
+<!--
 					<div class="entry-meta">
 						
 						<span class="">Posted on <?php $pfx_date = get_the_date(); ?><?php echo $pfx_date ;?> </span>
 						
 						
-					</div><!-- .entry-meta -->
+					</div
+--><!-- .entry-meta -->
 
 					<div class="entry-content">
 						
@@ -35,6 +39,12 @@
 												    		
 												    	
 												    		<a class="newsfeed_link" href="<?php the_field('pdf');?>" target="_blank"><?php the_title(); ?></a>
+												    		
+												    		<?php if(get_field('mypublication')):?>
+												    		
+												    			<span class="publication_author"><?php the_field('mypublication');?></span>
+												    		
+												    		<?php endif;?>
 												    		
 												    		
 												    		<?php if(get_field('pdf_excerpt')):?>
@@ -64,6 +74,8 @@
 												    	<?php endif; ?>
 												    	
 												    	<?php if( get_field('press_or_blog_post') == 'Blog Post' ): ?>
+												    	
+												    		<span style="padding-top:0;margin-bottom:20px;" class="publication_author">by Snip-its</span>
 												    	
 												    		<?php the_field('blog_text');?>
 												    														    	
