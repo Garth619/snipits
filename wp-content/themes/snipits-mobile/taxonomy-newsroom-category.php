@@ -11,11 +11,7 @@ get_header(); ?>
 
 		
 
-		
-		
-		<img class="banner" src="<?php the_field('inner_banners');?>"/>
-	<div class="banner-header"></div>
-		<div id="container">
+		<div id="container" style="margin-top:30px;">
 			<div id="content"><br/>
 								
 				

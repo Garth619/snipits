@@ -15,21 +15,13 @@
 get_header(); ?>
 		<div id="container">
 		
-			<div id="banner-top"></div><!-- banner-top -->
-				
-				<div id="banner">
-					
-					<div class="banner-header"></div><!-- banner-header -->
-			
-				</div><!-- banner -->
 		
-				<div id="banner-bottom"></div>
 				
 				
 				<div id="banner-top"></div>
 					
 					
-					<div id="content" role="main">
+					<div id="content" role="main" style="min-height:1000px;">
 			
 						<div class="breadcrumbs">
     
