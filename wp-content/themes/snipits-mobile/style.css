@@ -1653,3 +1653,18 @@ a.newsfeed_link {
 
 
 span.publication_author{font-style:italic;display:block;margin-top:13px}
+
+
+
+
+.new_banner {
+	margin:0 auto;
+	display: block;
+	img {
+		max-width: 100%;
+		height:auto;
+	}
+	
+}
+
+

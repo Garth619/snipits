@@ -12,6 +12,8 @@ get_header(); ?>
 		
 		
 		<div id="container">
+			
+			<?php include('banner.php');?>
 				
 					<div id="banner-top"></div>
 					<div id="content" role="main">

@@ -12,8 +12,8 @@ get_header(); ?>
 		
 			
 
-			<img class="banner" src="<?php the_field('inner_banners');?>"/>
-	<div class="banner-header"></div>
+			<img class="new_banner" src="<?php bloginfo('template_directory');?>/images/mobile.png"/>
+	
 		<div id="container">
 			<div id="content"><br/>
 				<div class="breadcrumb">

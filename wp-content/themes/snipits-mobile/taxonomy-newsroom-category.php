@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-		
+		<img class="new_banner" src="<?php bloginfo('template_directory');?>/images/mobile.png"/>
 
 		<div id="container" style="margin-top:30px;">
 			<div id="content"><br/>
