@@ -19076,13 +19076,19 @@
 		},
 	"\/wp-content\/themes\/snipits-franchise\/images\/bond.jpg": {
 		"ft": 16384,
-		"iS": 22830,
+		"iS": 34701,
 		"oA": 0,
 		"oAP": "\/wp-content\/themes\/snipits-franchise\/images\/bond.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"\/wp-content\/themes\/snipits-franchise\/images\/bond.jpg.old": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/snipits-franchise\/images\/bond.jpg.old",
+		"oF": 0
 		},
 	"\/wp-content\/themes\/snipits-franchise\/images\/confidential-franchis#B976A.pdf": {
 		"ft": 8192,
@@ -20933,15 +20939,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/wp-content\/themes\/snipits-mobile\/images\/logos.jpg": {
-		"ft": 16384,
-		"iS": 28882,
-		"oA": 0,
-		"oAP": "\/wp-content\/themes\/snipits-mobile\/images\/logos.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+	"\/wp-content\/themes\/snipits-mobile\/images\/logos.jpg.old": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/snipits-mobile\/images\/logos.jpg.old",
+		"oF": 0
 		},
 	"\/wp-content\/themes\/snipits-mobile\/images\/lp.bak\/arrow.png": {
 		"ft": 32768,
@@ -23275,6 +23277,18 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-content\/uploads\/ithemes-security\/backups\/backup-snip-its-franchise-o-20170518-024453-x6pic3MB2kn8cNFAyINO6Ye7UFCyUL.zip",
+		"oF": 0
+		},
+	"\/wp-content\/uploads\/ithemes-security\/backups\/backup-snip-its-franchise-o-20170530-043934-eBfkJfbJQu6HMkYM3r36A0E22RdyDy.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/uploads\/ithemes-security\/backups\/backup-snip-its-franchise-o-20170530-043934-eBfkJfbJQu6HMkYM3r36A0E22RdyDy.zip",
+		"oF": 0
+		},
+	"\/wp-content\/uploads\/ithemes-security\/backups\/backup-snip-its-franchise-o-20170530-043935-S6mR9rapU54U1qjC3KDym0j9T8A5hX.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/uploads\/ithemes-security\/backups\/backup-snip-its-franchise-o-20170530-043935-S6mR9rapU54U1qjC3KDym0j9T8A5hX.zip",
 		"oF": 0
 		},
 	"\/wp-content\/uploads\/ithemes-security\/backups\/index.php": {
